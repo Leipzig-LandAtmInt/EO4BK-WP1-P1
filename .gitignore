@@ -4,3 +4,5 @@ dir_to_ignore/
 figures/
 None/
 proj.db
+map.html
+sentinel_processing_3.log
