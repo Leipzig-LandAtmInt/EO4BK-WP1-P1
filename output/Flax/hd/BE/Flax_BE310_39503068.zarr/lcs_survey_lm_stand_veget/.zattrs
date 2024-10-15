@@ -1,0 +1,15 @@
+{
+    "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+    "Description": "1 Yes \n2 No \n3 N.R.",
+    "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+    "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+    "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+    "Original name": "survey_lm_stand_veget",
+    "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+    "Processing Steps": "",
+    "Value Origin": "This field is defined by LUCAS",
+    "_ARRAY_DIMENSIONS": [
+        "index"
+    ],
+    "long_name": "Presence of soil surface covers: standing vegetation"
+}

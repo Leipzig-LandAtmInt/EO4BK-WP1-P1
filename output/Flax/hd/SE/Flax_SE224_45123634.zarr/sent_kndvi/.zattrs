@@ -1,0 +1,10 @@
+{
+    "Pixel Size": "10 m",
+    "Processing Steps": "Index was calculated with spyndex v. 0.6.0 package",
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "long_name": "kernel Normalized Vegetation Index"
+}

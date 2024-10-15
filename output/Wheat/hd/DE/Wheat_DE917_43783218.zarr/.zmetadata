@@ -1,0 +1,1670 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "Description": "Data variables with the prefix \"sent_\" are referring to Sentinel variables, \nData varaibales with the prefix \"lcs_\" are referring to LUCAS variables",
+            "acknowledgment": "All EO4BK data providers are acknowledged inside each variable"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "lat/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "lat/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "lat"
+            ]
+        },
+        "lcs_eo4bk/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_eo4bk/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "The land cover class for EO4BK Nomenclature",
+            "Detailed description": "No detailed description available",
+            "Download link": "https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1/tree/1_Preprocessing_LUCAS_EO4BK/data/eo4bkclasses",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "-",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "1. lu1code == 'U111 - Agriculture (excluding fallow land and kitchen gardens)' \n2. Theoretical Point Location == Copernicus Location \n3. Wheat == ['B11'] \n4. Polyarea >= 400 sqm",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "EO4BK land cover class"
+        },
+        "lcs_lc1/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_lc1/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Land cover will be noted for each point according to the classification mentioned in LUCAS reference document C3-classification. For every point one or 2 land covers are to be recorded. The dominant land cover is recorded first (LC1). ",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lc1",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Land cover 1"
+        },
+        "lcs_lc1_spec/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_lc1_spec/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "List of detailed crop species (C3 doc, codes B00.)",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lc1_spec",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "LC1 crop species"
+        },
+        "lcs_lc2/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_lc2/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "When more than one land cover co-exists in the same area, a second land cover may be needed to describe the point.",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lc2",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Land cover 2"
+        },
+        "lcs_lc2_spec/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_lc2_spec/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "List of detailed crop species (C3 doc, codes B00.)",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lc2_spec",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "LC2 crop species"
+        },
+        "lcs_lc3/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_lc3/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Copernicus land cover is the land cover of the point reached by the surveyor in the field using the LUCAS LC classification at level 3",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "surveycprnlc",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Copernicus Land cover"
+        },
+        "lcs_nuts0/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_nuts0/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Country Level",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "nuts0",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Nomenclature of territorial units for statistics 0"
+        },
+        "lcs_nuts1/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_nuts1/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Major socio-economic regions",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "nuts1",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Nomenclature of territorial units for statistics 1"
+        },
+        "lcs_nuts2/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_nuts2/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Basic regions (for regional policies)",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "nuts2",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Nomenclature of territorial units for statistics 2"
+        },
+        "lcs_nuts3/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_nuts3/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Small regions (for specific diagnoses)",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "nuts3",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Nomenclature of territorial units for statistics 3"
+        },
+        "lcs_point_id/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_point_id/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "ID of the LUCAS theoretical point",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "point_id",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Point Identification"
+        },
+        "lcs_poly_area_sqm/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_poly_area_sqm/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "Area of the LUCAS Copernicus polygon",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "poly_area_sqm",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Polygon area in sqm"
+        },
+        "lcs_poly_geom/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_poly_geom/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "The geometry of the Copernicus polygon",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "poly_geom",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Polygon Geometry"
+        },
+        "lcs_survey_date/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_date/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "The date in which the survey was conducted in the field",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_date",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "calendar": "proleptic_gregorian",
+            "long_name": "Date of the survey",
+            "units": "days since 2022-07-26 00:00:00"
+        },
+        "lcs_survey_inspire_unvegetated/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_inspire_unvegetated/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "The degree of unvegetated area is the percentage (0-100%) of the area within the extended window that does not show vegetation, e.g. water, bare soil.",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_inspire_unvegetated",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Unvegetated area (%)"
+        },
+        "lcs_survey_lm_by_veget/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_lm_by_veget/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 0-25% \n2 25-50% \n3 50-75% \n4 75-100%",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lm_by_veget",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Percentage of surface cover by standing vegetation"
+        },
+        "lcs_survey_lm_crop_resid/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_lm_crop_resid/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Yes \n2 No \n3 N.R.",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lm_crop_resid",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Presence of soil surface covers: crop residues"
+        },
+        "lcs_survey_lm_crop_resid_perc/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_lm_crop_resid_perc/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 0-25% \n2 25-50% \n3 50-75% \n4 75-100%",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lm_crop_resid_perc",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Percentage of surface cover by crop residues"
+        },
+        "lcs_survey_lm_stand_veget/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_lm_stand_veget/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Yes \n2 No \n3 N.R.",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_lm_stand_veget",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Presence of soil surface covers: standing vegetation"
+        },
+        "lcs_survey_wm/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_wm/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Irrigation \n2 Potential irrigation \n3 Drainage \n4 Irrigation and drainage \n5 No visible water management \n6 N.R.)",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_wm",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Presence of water management"
+        },
+        "lcs_survey_wm_delivery/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_wm_delivery/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Canal \n2 Ditch \n3 Pipeline \n4 Other/not identifiable \n5 N.R.",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_wm_delivery",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Delivery System"
+        },
+        "lcs_survey_wm_reclaim_signs/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_wm_reclaim_signs/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Yes \n2 No",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_wm_reclaim_signs",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Signs of use of reclaimed water"
+        },
+        "lcs_survey_wm_source/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_wm_source/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Well \n2 Pond/Lake/Reservoir \n3 Stream/Canal/Ditch \n4 Lagoon/Wastewater \n5 Other/not identifiable  \n6 N.R",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_wm_source",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Source of irrigation"
+        },
+        "lcs_survey_wm_type/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_wm_type/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "1 Gravity \n2.Pressure: Sprinkler irrigation \n3 Pressure: Micro-irrigation \n4 Gravity/Pressure \n5 Other/not identifiable \n6 N.R.",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_wm_type",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Type of irrigation"
+        },
+        "lcs_survey_year/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "lcs_survey_year/.zattrs": {
+            "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+            "Description": "The year in which the survey was conducted in the field",
+            "Detailed description": "https://ec.europa.eu/eurostat/documents/205002/13686460/C1-LUCAS-2022.pdf",
+            "Download link": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/l2022_survey_cop_radpoly_attr.gpkg",
+            "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Original name": "survey_year",
+            "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+            "Processing Steps": "",
+            "Value Origin": "This field is defined by LUCAS",
+            "_ARRAY_DIMENSIONS": [
+                "index"
+            ],
+            "long_name": "Year of the survey"
+        },
+        "lon/.zarray": {
+            "chunks": [
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                3
+            ],
+            "zarr_format": 2
+        },
+        "lon/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "lon"
+            ]
+        },
+        "sent_b01/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b01/.zattrs": {
+            "Original Resolution": "60 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "443.9 nm",
+            "Wavelentgh S2B": "442.3 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 01 - Aerosol"
+        },
+        "sent_b02/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b02/.zattrs": {
+            "Original Resolution": "10 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "496.6 nm",
+            "Wavelentgh S2B": "492.1 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 02 - Blue"
+        },
+        "sent_b03/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b03/.zattrs": {
+            "Original Resolution": "10 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "560 nm",
+            "Wavelentgh S2B": "559 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 03 - Green"
+        },
+        "sent_b04/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b04/.zattrs": {
+            "Original Resolution": "10 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "664.5 nm",
+            "Wavelentgh S2B": "665 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 04 - Red"
+        },
+        "sent_b05/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b05/.zattrs": {
+            "Original Resolution": "20 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "703.9 nm",
+            "Wavelentgh S2B": "703.8 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 05 - Red Edge 1"
+        },
+        "sent_b06/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b06/.zattrs": {
+            "Original Resolution": "20 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "740.2 nm",
+            "Wavelentgh S2B": "739.1 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 06 - Red Edge 2"
+        },
+        "sent_b07/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b07/.zattrs": {
+            "Original Resolution": "20 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "782.5 nm",
+            "Wavelentgh S2B": "779.7 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 07 - Red Edge 3"
+        },
+        "sent_b08/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b08/.zattrs": {
+            "Original Resolution": "10 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "835.1 nm",
+            "Wavelentgh S2B": "833 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 08 - NIR"
+        },
+        "sent_b08a/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b08a/.zattrs": {
+            "Original Resolution": "20 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "864.8 nm",
+            "Wavelentgh S2B": "864 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 8A - Red Edge 4"
+        },
+        "sent_b09/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b09/.zattrs": {
+            "Original Resolution": "60 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "945 nm",
+            "Wavelentgh S2B": "943.2 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 09 - Water vapor"
+        },
+        "sent_b11/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b11/.zattrs": {
+            "Original Resolution": "20 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "1613.7 nm",
+            "Wavelentgh S2B": "1610.4 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 11 - SWIR 1"
+        },
+        "sent_b12/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_b12/.zattrs": {
+            "Original Resolution": "20 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, Cloud masking == True, snow masking == True, 7d temporal average composite",
+            "Wavelength S2A": "2202.4 nm",
+            "Wavelentgh S2B": "2185.7 nm",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-2 Band 12 - SWIR 2"
+        },
+        "sent_kndvi/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_kndvi/.zattrs": {
+            "Pixel Size": "10 m",
+            "Processing Steps": "Index was calculated with spyndex v. 0.6.0 package",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "kernel Normalized Vegetation Index"
+        },
+        "sent_ndvi/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_ndvi/.zattrs": {
+            "Pixel Size": "10 m",
+            "Processing Steps": "Index was calculated with spyndex v. 0.6.0 package",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Normalized Vegetation Index"
+        },
+        "sent_nirv/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_nirv/.zattrs": {
+            "Pixel Size": "10 m",
+            "Processing Steps": "Index was calculated with spyndex v. 0.6.0 package",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Near Infrared Reflectance of Vegetation"
+        },
+        "sent_vh/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_vh/.zattrs": {
+            "Description": "Dual-band cross polarization, waves are transmitted vertically and received horizontally",
+            "Original Resolution": "10 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, 7d temporal average composite",
+            "Usage": "VH is more sensetive to change in vegetation density and structure",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-1 Vertical-Horizontal (VH)"
+        },
+        "sent_vv/.zarray": {
+            "chunks": [
+                1,
+                4,
+                3
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11,
+                4,
+                3
+            ],
+            "zarr_format": 2
+        },
+        "sent_vv/.zattrs": {
+            "Description": "Single co-polarization, waves are transmitted and received vertically",
+            "Original Resolution": "10 m",
+            "Pixel Size": "10 m",
+            "Processing Steps": "Data was received via sentle package, 7d temporal average composite",
+            "Usage": "VV is more sensetive to vegetation phenology or water content",
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "lat",
+                "lon"
+            ],
+            "long_name": "Sentinel-1 Vertical-Vertical (VV)"
+        },
+        "time/.zarray": {
+            "chunks": [
+                11
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                11
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 2024-07-11 00:00:00"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

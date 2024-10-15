@@ -1,0 +1,15 @@
+{
+    "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2023)",
+    "Description": "The land cover class for EO4BK Nomenclature",
+    "Detailed description": "No detailed description available",
+    "Download link": "https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1/tree/1_Preprocessing_LUCAS_EO4BK/data/eo4bkclasses",
+    "How to cite": "European Commission, Joint Research Centre (JRC) (2023): LUCAS Copernicus 2022. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+    "Original name": "-",
+    "PID": "http://data.europa.eu/89h/e3fe3cd0-44db-470e-8769-172a8b9e8874",
+    "Processing Steps": "1. lu1code == 'U111 - Agriculture (excluding fallow land and kitchen gardens)' \n2. Theoretical Point Location == Copernicus Location \n3. Flax == ['B35'] \n4. Polyarea >= 400 sqm",
+    "Value Origin": "This field is defined by LUCAS",
+    "_ARRAY_DIMENSIONS": [
+        "index"
+    ],
+    "long_name": "EO4BK land cover class"
+}

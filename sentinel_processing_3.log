@@ -1,0 +1,2339 @@
+2024-10-15 15:28:56,483 - INFO - > Save the Minicube 45123634 ...
+2024-10-15 15:29:24,276 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980264' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,283 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980307' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,794 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980302' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,824 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980262' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,862 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980258' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,941 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980249' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,965 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980299' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,976 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980300' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,978 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980251' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,994 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980297' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:24,998 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980267' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,000 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980242' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,003 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980291' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,005 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980234' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,008 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980289' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,011 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980240' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,014 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980292' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,016 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980294' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,019 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980237' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,022 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980330' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,026 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980283' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,031 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980227' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,033 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980231' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,052 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980229' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,055 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980232' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,057 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980228' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,060 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980284' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,064 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980224' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,066 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980282' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,069 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980230' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,071 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980280' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,073 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980218' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,076 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980275' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,078 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980217' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,081 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980274' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,083 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980329' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,085 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980222' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,088 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980276' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,090 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980220' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,093 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980219' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,095 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980268' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,097 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980328' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,100 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980327' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,102 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980271' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,105 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980266' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,107 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980246' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,110 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980272' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,112 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980270' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,114 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980256' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,117 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980255' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,119 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980321' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,138 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980316' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,141 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980312' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,143 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980265' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,146 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980323' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,148 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980261' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,151 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980245' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,153 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980254' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,156 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980243' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,159 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980313' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,179 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980320' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,182 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980250' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:29:25,187 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5980241' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:38,127 - INFO - > Save the Minicube 45123634 ...
+2024-10-15 15:30:42,623 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028671' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:42,640 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028688' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,011 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028725' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,027 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028705' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,041 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028697' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,046 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028722' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,049 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028783' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,070 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028680' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,074 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028729' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,081 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028774' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,083 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028677' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,095 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028743' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,099 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028733' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,105 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028771' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,114 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028715' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,115 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028780' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,135 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028692' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,136 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028750' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,140 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028709' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,143 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028714' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,146 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028776' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,149 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028763' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,152 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028742' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,156 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028749' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,159 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028707' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,169 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028740' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,174 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028693' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,177 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028777' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,180 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028700' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,183 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028674' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,192 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028772' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,197 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028724' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,209 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028672' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,212 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028720' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,218 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028703' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,221 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028759' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,227 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028701' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,232 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028744' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,235 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028708' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,244 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028765' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,247 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028773' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,250 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028734' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,253 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028711' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,256 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028747' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,259 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028770' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,262 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028682' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,265 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028782' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,268 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028768' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,271 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028684' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,274 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028732' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,277 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028689' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,279 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028769' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,283 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028691' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,291 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028706' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,298 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028755' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,308 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028754' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,313 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028746' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,318 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028735' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,324 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028673' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,328 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028702' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,333 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028757' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,336 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028685' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,352 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028736' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,363 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028719' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,369 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028712' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,393 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028716' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,399 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028753' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,410 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028781' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,417 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028687' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,423 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028767' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,450 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028726' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,463 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028686' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,467 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028787' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,470 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028737' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,543 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028683' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,567 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028786' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,581 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028704' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,587 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028739' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,599 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028675' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,602 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028762' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,606 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028766' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,618 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028676' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,636 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028723' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,639 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028764' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,643 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028699' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,647 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028751' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,661 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028778' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,664 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028669' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,676 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028695' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,689 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028779' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,699 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028760' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,717 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028721' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,726 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028761' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,731 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028694' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,736 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028752' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,745 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028678' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,775 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028728' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,779 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028738' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,782 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028717' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,792 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028727' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,808 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028775' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,823 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028710' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,826 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028730' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,830 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028731' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,852 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028679' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,858 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028748' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,865 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028758' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,881 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028713' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,886 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028784' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,890 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028696' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,898 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028741' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,904 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028785' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,920 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028745' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,925 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028698' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,937 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028681' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,981 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028756' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:43,985 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028690' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:44,002 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028718' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:30:44,026 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6028670' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 15:31:50,915 - INFO - > Save the Minicube 45123634 ...
+2024-10-15 15:32:12,256 - INFO - > Successfully saved the Minicube 45123634 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Flax/hd/SE/Flax_SE224_45123634
+2024-10-15 15:32:14,209 - INFO - > Save the Minicube 39503068 ...
+2024-10-15 15:32:48,438 - INFO - > Successfully saved the Minicube 39503068 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Flax/hd/BE/Flax_BE310_39503068
+2024-10-15 15:47:09,947 - INFO - > Save the Minicube 44963126 ...
+2024-10-15 15:48:21,066 - INFO - > Successfully saved the Minicube 44963126 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DED52_44963126
+2024-10-15 15:48:23,077 - INFO - > Save the Minicube 43783218 ...
+2024-10-15 15:49:18,538 - INFO - > Successfully saved the Minicube 43783218 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DE917_43783218
+2024-10-15 16:08:14,428 - INFO - > Save the Minicube 44963126 ...
+2024-10-15 16:09:21,710 - INFO - > Successfully saved the Minicube 44963126 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DED52_44963126
+2024-10-15 16:09:23,497 - INFO - > Save the Minicube 43783218 ...
+2024-10-15 16:09:56,273 - INFO - > Successfully saved the Minicube 43783218 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DE917_43783218
+2024-10-15 16:11:12,828 - INFO - > Save the Minicube 44963126 ...
+2024-10-15 16:11:33,533 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224126' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,567 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224244' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,583 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224107' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,605 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224153' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,636 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224207' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,656 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224157' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,677 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224204' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,681 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224205' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,684 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224266' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,686 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224248' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,689 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224232' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,691 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224236' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,694 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224188' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,699 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224242' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,703 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224167' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,706 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224109' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,709 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224178' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,717 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224208' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,730 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224189' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,741 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224292' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,746 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224285' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,749 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224271' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,757 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224224' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,760 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224276' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,763 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224175' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,765 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224193' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,768 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224256' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,770 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224135' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,782 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224278' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,783 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224238' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,786 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224120' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,793 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224210' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,798 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224251' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,801 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224144' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,804 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224214' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,806 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224200' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,809 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224219' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,817 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224158' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,821 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224196' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,827 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224235' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,832 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224263' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,836 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224123' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,839 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224246' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,841 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224213' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,845 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224173' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,848 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224237' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,851 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224133' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,853 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224113' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,858 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224117' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,870 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224110' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,886 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224182' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,889 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224273' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,911 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224127' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,915 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224192' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,954 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224260' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,978 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224132' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,982 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224233' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,985 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224275' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,988 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224142' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,991 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224288' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,994 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224298' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,995 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224155' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:33,999 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224221' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,010 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224176' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,017 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224294' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,020 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224225' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,023 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224195' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,025 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224179' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,028 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224174' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,030 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224190' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,048 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224229' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,049 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224217' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,053 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224243' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,058 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224290' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,061 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224103' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,066 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224102' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,069 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224191' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,070 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224165' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,079 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224152' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,084 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224170' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,096 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224234' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,098 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224241' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,105 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224250' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,108 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224249' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,111 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224230' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,112 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224201' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,126 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224240' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,136 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224223' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,139 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224228' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,144 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224194' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,148 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224220' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,151 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224252' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,154 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224264' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,158 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224258' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,161 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224227' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,163 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224149' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,166 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224187' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,169 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224202' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,171 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224218' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,174 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224231' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,176 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224222' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,179 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224283' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,182 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224287' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,195 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224299' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,204 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224122' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,206 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224108' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,216 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224282' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,222 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224162' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,238 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224211' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,241 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224257' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,257 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224253' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,296 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224245' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,313 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224269' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,320 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224301' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,340 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224121' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,354 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224265' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,361 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224163' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,368 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224226' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,389 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224216' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,394 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224146' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,397 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224247' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,400 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224114' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,403 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224262' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,415 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224239' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,419 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224259' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,422 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224267' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,425 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224169' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,427 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224141' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,433 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224116' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,437 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224215' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,484 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224137' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,503 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224140' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,512 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224296' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,532 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224302' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,548 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224297' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,553 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224295' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,561 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224293' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,566 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224289' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,568 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224300' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,578 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224303' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,581 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224304' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,585 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224119' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,588 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224272' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,590 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224270' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,606 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224268' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,608 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224261' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,615 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224118' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,620 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224255' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,627 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224286' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,628 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224274' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,645 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224277' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,648 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224291' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,661 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224151' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,664 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224280' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,667 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224279' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,671 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224284' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,675 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224281' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,680 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224124' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,691 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224125' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,714 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224104' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,719 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224129' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,725 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224128' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,728 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224150' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,731 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224254' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,735 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224101' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,738 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224115' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,747 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224183' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,755 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224106' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,759 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224105' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,764 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224112' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,803 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224111' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,808 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224148' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,819 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224145' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,820 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224154' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,830 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224156' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,843 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224134' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,845 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224198' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,848 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224143' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,895 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224138' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,969 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224147' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,974 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224139' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,977 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224130' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:34,991 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224131' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,008 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224181' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,011 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224136' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,023 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224180' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,034 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224177' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,069 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224185' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,073 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224184' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,097 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224168' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,106 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224197' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,111 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224159' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,113 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224160' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,172 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224161' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,177 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224164' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,181 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224172' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,185 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224212' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,196 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224171' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,201 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224166' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,204 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224199' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,210 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224206' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,215 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224186' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,218 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224203' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:11:35,221 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-7224209' coro=<Client._gather.<locals>.wait() done, defined at /net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py:2385> exception=AllExit()>
+Traceback (most recent call last):
+  File "/net/home/dschierbaum/.local/lib/python3.12/site-packages/distributed/client.py", line 2394, in wait
+    raise AllExit()
+distributed.client.AllExit
+2024-10-15 16:27:08,902 - INFO - > Save the Minicube 44963126 ...
+2024-10-15 16:28:14,407 - INFO - > Successfully saved the Minicube 44963126 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DED52_44963126
+2024-10-15 16:28:15,971 - INFO - > Save the Minicube 43783218 ...
+2024-10-15 16:28:54,395 - INFO - > Successfully saved the Minicube 43783218 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DE917_43783218
+2024-10-15 16:35:10,461 - INFO - > Save the Minicube 44963126 ...
+2024-10-15 16:36:19,251 - INFO - > Successfully saved the Minicube 44963126 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DED52_44963126
+2024-10-15 16:36:22,515 - INFO - > Save the Minicube 43783218 ...
+2024-10-15 16:37:02,633 - INFO - > Successfully saved the Minicube 43783218 at: /net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-WP1-P1/output/Wheat/hd/DE/Wheat_DE917_43783218
