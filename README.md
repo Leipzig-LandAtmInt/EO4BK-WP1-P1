@@ -13,7 +13,7 @@ conda activate wp1v3
 ./run_script_parallel_copy.sh
 ```
 The main_execute.py executes following tasks, which are defined in the main_function(): \
-For each polgyon of the inpute data  (e.g., Barley_2022_eo4bk.gpkg, layer = hd_data): \
+For each polgyon of the inpute data  (e.g., Barley_2022_eo4bk.gpkg, layer = hd_data): 
 
 1. Downloads the data with sentle (https://github.com/cmosig/sentle) via senntle_download from _downloadsentle_.py within the polygon boundaries and then crops the Sentinel data with the polygon
 2. 
