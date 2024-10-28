@@ -12,7 +12,7 @@ tmux new -s download
 conda activate wp1v3
 ./run_script_parallel_copy.sh
 '''
-The main_execute.py executes following tasks, which are defined in the main_function(): /
-For each polgyon of the inpute data  (e.g., Barley_2022_eo4bk.gpkg, layer = hd_data): /
+The main_execute.py executes following tasks, which are defined in the main_function(): \
+For each polgyon of the inpute data  (e.g., Barley_2022_eo4bk.gpkg, layer = hd_data): \
 
 
