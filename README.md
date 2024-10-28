@@ -7,11 +7,11 @@ The folder contains eo4bksentleD2.1_V0/ and jupyter_notebooks/. The eo4bksentleD
 
 The eo4bsentleD2.1_V0 pipeline can be executed in a tmux session 
 
-'''
+```
 tmux new -s download
 conda activate wp1v3
 ./run_script_parallel_copy.sh
-'''
+```
 The main_execute.py executes following tasks, which are defined in the main_function(): \
 For each polgyon of the inpute data  (e.g., Barley_2022_eo4bk.gpkg, layer = hd_data): \
 
