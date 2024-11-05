@@ -23,18 +23,18 @@ logger = logging.getLogger()
 
 
 # environment
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 torch.cuda.device_count()
 # Define working direction path 
 
 load_dotenv()
 
-LUCAS = os.getenv('LUCAS_HARMO')
-MINICUBE_OUT= os.getenv('MINICUBE_OUT_HAR')
+LUCAS = os.getenv('LUCAS_D21_V01')
+MINICUBE_OUT= os.getenv('MINICUBE_OUT_D21_V01')
 # MINICUBE_OUT= os.getenv('MINICUBE_OUT')
 # MINICUBE_OUT = os.getenv('MINICUBE_OUT_2018')
 
-lucaspoly = gpd.read_file(f'{LUCAS}/Barley_2018_eo4bk.gpkg', layer = 'hd_data')
+lucaspoly = gpd.read_file(f'{LUCAS}/2018/Barley_2018_eo4bk.gpkg', layer = 'hd_data')
 
 
 
