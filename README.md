@@ -20,7 +20,8 @@ This notebook describes the harmonisation process of both LUCAS_2018.gpkg and LU
 
 ## Input data 
 
-The LUCAS_2022.gpkg can be downloaded from 
+The LUCAS_2022.gpkg can be downloaded from (https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_2022_Copernicus/output/l2022_survey_crop_poly_rad_allatr.gpkg) and can be used under Creative Commons Attribution 4.0 International (CC BY 4.0) licence. 
+The LUCAS_2018.gpkg can be downloaded from (https://data.jrc.ec.europa.eu/dataset/cfe66a0c-bdee-4074-96e1-a2f7030b9515) and can be used without limitations. The LUCAS_2018_Copernicus_polygons.shp was joint with the LUCAS_2018_Copernicus_attributes.csv and cleaned with the command "COPERNICUS_CLEANED" = 'True' in QGIS to get the input-data for this script. 
 
 # eo4bksentleD2.1_V0/
 
