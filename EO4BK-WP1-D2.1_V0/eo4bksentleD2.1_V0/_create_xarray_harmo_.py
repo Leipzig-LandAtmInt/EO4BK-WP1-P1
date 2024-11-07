@@ -2,7 +2,7 @@ import xarray as xr
 from _create_lucas_attributes_ import create_lucas_attributes
 from _create_sentinel_attributes_ import create_sentinel_attributes
 
-def create_xarray(variables):
+def create_xarray(variables, year):
     
 
     '''
@@ -62,7 +62,7 @@ def create_xarray(variables):
 
     # # get the lucas attributes from the lucas_core_directory, because of lucas hd and ld input differences it must be flexible
     
-    for var, attr in create_lucas_attributes(variables['point_id']).items():
+    for var, attr in create_lucas_attributes(variables['point_id'], year).items():
         datacube[f'lcs_{var}'].attrs['long_name'] = attr['long_name']
         datacube[f'lcs_{var}'].attrs['Description'] = attr['description']
         datacube[f'lcs_{var}'].attrs['Value Origin'] = attr['value_origin']

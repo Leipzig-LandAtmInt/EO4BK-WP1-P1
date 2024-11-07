@@ -1,4 +1,4 @@
-def create_lucas_attributes(variables):
+def create_lucas_attributes(variables, year):
         
         
         lcs_eo4bkdata = variables
@@ -31,7 +31,7 @@ def create_lucas_attributes(variables):
         for attr in perm_list:
                 try:
                         lcs_core_dict[attr] = lcs_perm_attr[attr].copy()
-                        lcs_core_dict[attr].update(lcs_glb_attributes['lcs_2018'])
+                        lcs_core_dict[attr].update(lcs_glb_attributes[f'lcs_{year}'])
                 except KeyError:
                         pass
         return lcs_core_dict

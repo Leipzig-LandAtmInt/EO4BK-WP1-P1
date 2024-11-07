@@ -1,10 +1,10 @@
 #!/bin/bash
 COUNTER = 0 
-for i in {20..400} # 684   # {99..977}   #977
+for i in {0..1} # 684   # {99..977}   #977
 do
   python main_execute.py $i 
   COUNTER=$(( COUNTER + 1 ))
-  printf "After 'COUNTER=\$(( COUNTER + 1 ))', COUNTER=%d\n" $COUNTER
+  printf "After 'COUNTER=\$(( COUNTER + 1 ))', COUNTER=%d\n" $COUNTER >logger
 done
 
 

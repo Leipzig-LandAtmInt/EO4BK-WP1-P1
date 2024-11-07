@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger()
 
 # function saves the zarr
-def save_as_zarr(output_eo4bk_minicube,lcs_eo4bkdata, main_direction, hd = True):
+def save_as_zarr(output_eo4bk_minicube,lcs_eo4bkdata, main_direction, detail):
     '''
     This function save the data from xarray_output to a zarr file
     '''
@@ -22,11 +22,11 @@ def save_as_zarr(output_eo4bk_minicube,lcs_eo4bkdata, main_direction, hd = True)
 
     main_direction = main_direction
     
-    # is to create different folders for ld and hd data. 
-    if hd == True:
-        detail = 'hd'
-    else:
-        detail = 'ld'
+    # # is to create different folders for ld and hd data. 
+    # if hd == True:
+    #     detail = 'hd'
+    # else:
+    #     detail = 'ld'
 
     # defines the output direction
     if 'lc_eo4bk_2022' in lcs_eo4bkdata:
