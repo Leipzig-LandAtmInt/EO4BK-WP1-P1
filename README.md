@@ -1,4 +1,10 @@
 # EO4BK-WP1-P1
+# Installation
+
+The Repository can be downloaded with:
+```
+git clone https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
+```
 
 # EO4BK-WP1-D2.1_V0/ 
 The folder contains eo4bksentleD2.1_V0/ eo4bsentleD2.1_V0.1/ and jupyter_notebooks/. The eo4bksentleD2.1_V0/ folder stores the Sentinel downloading pipeline. The jupyter_notebook folder contains LUCAS Preprocessing Notebooks that describe the workflow for LUCAS COPERNICUS 2018 and 2022 and LUCAS theoretical points 2018 and 2022 to create EO4BK single cropping and double cropping, permanent crops and grassland classes. In addition, it contains a notebook describing how to create the harmonised LUCAS 2018/2022 for downloading longer time series. EO4BK_Sentle_Download.ipynb uses the eo4bsentleD2.1_V0/*.py scripts to download and saving Sentinel data, and plotting a time-series. 
