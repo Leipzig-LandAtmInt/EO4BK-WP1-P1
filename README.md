@@ -1,7 +1,7 @@
 # EO4BK-WP1-P1
 # Installation
 
-The Repository can be downloaded with:
+The repository can be downloaded with:
 ```
 git clone https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
 ```
