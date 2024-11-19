@@ -1,13 +1,20 @@
 # EO4BK-WP1-P1
 
+## Install the D2.1_1.1_0.2 branch
+
+The branch can be installed with 
+```
+$ git clone -b D2.1_V1.1_0.2  https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
+```
+
 ## Install Conda environment
 Create conda environment from yml file using following command in your terminal
 ```
-$ conda env create -f wp1v3.yml
+$ conda env create -f wp1_d21_V02.yml
 ```
 Alternatively, The conda environment can be given a customised name with following command in your terminal. 
 ```
-$ conda env create -f wp1v3.yml -n <your name>
+$ conda env create -f wp1_d21_V02.yml -n <your name>
 ```
 Check whether the new environment is installed.
 ```
@@ -15,16 +22,15 @@ $ conda info --envs
 ```
 After that conda environment can be activated with
 ```
-$ conda activate wp1v3
+$ conda activate wp1_d21_V02
 ```
-## Use jupyter notebooks
-1_LUCAS2022_Preprocessing pipeline to preprocess LUCAS 2022 Copernicus dataset \
-2_Download_EO4BK_Minicubes to create zarr files with LUCAS 2022 Copernicus information and the corresponding Sentinel 1 and 2 dataset
 
-## Use without jupyter notebook
 
-Open the eo4bksentle folder: \
-Open "main_execute.py" and change following input variables. 
+
+## How to use this pipeline
+
+Open the D2.1_V1.1_0.2 folder: \
+Open ".env" file to change the input variables. 
 
 ```
 # The input for the LUCAS Dataset and the output path in which the final zarr datasets are saved must be defined in the .env data
