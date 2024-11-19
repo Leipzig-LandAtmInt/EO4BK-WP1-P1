@@ -71,31 +71,35 @@ python main_execute.py $SLURM_ARRAY_TASK_ID
 
 Start the job in the terminal with:
 ```
+conda activate wp1_d21_V02
 sbatch run_script_parallel.sh
 ```
-### Run in queque 
-
-Then open ‘run_script_parallel.sh’ to change how many polygons are used to download Sentinel data.
+### Run in for loop 
+Alternatively, the job can also be executed in a for loop. Open ```run_script_linear.sh``:
 ```
-# At the moment it iterates from 0 to 2 over the id_list inside "main_execute.py". This means that the first three polygons of the wheat_eo4bk.gpkg with low detail are taken. 
-for i in {0..2} # 684   # {99..977}   #977
+#!/bin/bash
+COUNTER=0 
+for i in {0..1} # 684   # {99..977}   #977
 do
-  python main_execute.py $i
+  python main_execute.py $i 
+  COUNTER=$(( COUNTER + 1 ))
+  printf "After 'COUNTER=\$(( COUNTER + 1 ))', COUNTER=%d\n" $COUNTER 
 done
 ```
-To start download the Sentinel data, describe the attributes, create an xarray and save the xarray as zarr, execute the following commands in the terminal
+```{0..1}`` defines the index via which the code is run through in a loop.\
+Start the job in the terminal using: 
 ```
-$ conda activate wp1v3
-$ ./run_script_parallel.sh
+conda activate wp1_d21_V02
+./run_script_parallel.sh
 ```
-
-To make a download in the background, execute following commands in the terminal
+### TMUX
+Both variants can be executed in the background by executing the following commands in the terminal:
 
 ```
 # to create a new session
 $ tmux new -s <name>
 # then execute the commands from above
-$ conda activate wp1v3
+$ conda activate wp1_d21_V02
 $ ./run_script_parallel.sh
 # go back outside the session without closing
 $ tmux detach
