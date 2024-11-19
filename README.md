@@ -1,5 +1,14 @@
 # EO4BK-WP1-P1 D2.1_1.1_0.2
 
+This pipeline uses LUCAS reference datasets changed by the Jupyter-Notebook in the Jupyter_Notebook branch to download Sentinel data with the newest sentle version (sentle==2024.10.5) by Clemens Mosig. 
+It commits following tasks:
+1. main_execute.py: Pulls input variables from .env; main_function(idx) uses index from .sh files to run through the following steps. After each iteration, the job sleeps for 30 seconds.
+2. _downloadsentle_.py: Uses the sentle==2024.10.5 package to download sentinel data. Since ```save_zarr``` is now stored inside ```sentle.process()```, a dummy_datacube is saved in a folder named after the current index. ```S2_cloud_classification``` is set to ```cpu```, but can also be set to gpu if you follow the (https://github.com/cmosig/sentle).
+3. _clipp_download_output_.py: The dummy_datacube is clipped to the polygon extentions.
+4. _getdata_harmo_.py: Pulls dimensions and data variables of the clipped dummy_datacube to calculate NDVI, NIRv, kNDVI with spyndex==0.6.0.
+5. _create_xarray_harmo_.py: Retrieves variables, indices and dimensions from ```_getdata_harmo_.py ```. Assigns attributes with ```_create_lucas_attributes_.py``` and ```_create_sentinel_attributes_.py```. Stores everything in an ```xarray.Dataset```.
+6._save_xarray_.py: Saves the ```xarray.Dataset``` and deletes the dummy_datacube. If the script does not run to the end, the dummy_datacube is not deleted and must be deleted manually to avoid blocking the process for datacubes with the same index.
+
 ## Install the D2.1_1.1_0.2 branch
 
 The branch can be installed in the terminal with
