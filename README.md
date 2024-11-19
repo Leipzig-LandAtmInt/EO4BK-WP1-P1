@@ -7,7 +7,7 @@ The branch can be installed in the terminal with
 git clone -b D2.1_V1.1_0.2  https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
 ```
 
-## Install Conda environment
+### Install Conda environment
 Create conda environment from yml file using following command in your terminal
 ```
 $ conda env create -f wp1_d21_V02.yml
@@ -25,24 +25,27 @@ After that conda environment can be activated with
 $ conda activate wp1_d21_V02
 ```
 
-
-
 ## How to use this pipeline
 
 Open the D2.1_V1.1_0.2 folder: \
-Open ".env" file to change the input variables. 
+Open the ‘.env’ file to change the input variables. If .env is hidden by Github by default, open .env with ```nano``.
+The .env looks like:
 
 ```
-# The input for the LUCAS Dataset and the output path in which the final zarr datasets are saved must be defined in the .env data
-LUCAS2022 = os.getenv('LUCAS2022')
-MINICUBE_OUT = os.getenv('MINICUBE_OUT')
+HOME = '/net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-Github'
 
-# The landcover class and the level of detail can be selected, ld_data = low detail and hd_data = high_detail
-lucaspoly = gpd.read_file(f'{LUCAS2022}/wheat_eo4bk.gpkg', layer = 'ld_data')
+LUCAS_D21_V01 = 'EO4BK-WP1-P1/data/lucas_data_d2.1_V0.1'
+MINICUBE_OUT_D21_V01 = 'EO4BK-WP1-P1/data/minicube_europe_d2.1_V0.1'
 
-# change time span of download period
-time_span = "2024-05-01/2024-07-15"
+
+YEAR = '2018'
+DETAIL_LEVEL = 'hd'
+CROPTYPE = 'Barley'
 ```
+```HOME``` must be changed to the home directory in which this repository is installed. 
+```YEAR``` must be changed to the YEAR that is downloaded. 
+```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input lucas_2022.gpgk and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.
+
 Then open ‘run_script_parallel.sh’ to change how many polygons are used to download Sentinel data.
 ```
 # At the moment it iterates from 0 to 2 over the id_list inside "main_execute.py". This means that the first three polygons of the wheat_eo4bk.gpkg with low detail are taken. 
