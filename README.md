@@ -83,7 +83,7 @@ Start the job in the terminal with:
 conda activate wp1_d21_V02
 sbatch run_script_parallel.sh
 ```
-### Run in for loop 
+#### Run in for loop 
 Alternatively, the job can also be executed in a for loop. Open ```run_script_linear.sh``:
 ```
 #!/bin/bash
