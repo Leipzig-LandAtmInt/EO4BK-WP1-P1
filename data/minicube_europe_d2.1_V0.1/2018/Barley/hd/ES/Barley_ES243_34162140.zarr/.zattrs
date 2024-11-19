@@ -1,0 +1,4 @@
+{
+    "Description": "Data variables with the prefix \"sent_\" are referring to Sentinel variables, \nData varaibales with the prefix \"lcs_\" are referring to LUCAS variables",
+    "acknowledgment": "All EO4BK data providers are acknowledged inside each variable"
+}
