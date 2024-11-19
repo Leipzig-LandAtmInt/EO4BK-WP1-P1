@@ -54,8 +54,26 @@ After changes are made the ```.env``` needs to be saved.
 
 After the input variables are defined. Open ```run_script_parallel.sh```\
 ```
+#!/bin/bash
+#SBATCH --job-name=barley  # Job name
+#SBATCH --output=Logs/trash/master_output_%A_%a.out  # Output file for each job (%A is the master job ID, %a is the array index)
+#SBATCH --error=Logs/master_error_%A_%a.err    # Error file for each job
+#SBATCH --time=1-00:00:00                   # Max time per job
+#SBATCH --partition=clara              # Replace with your appropriate partition
+#SBATCH --array=0-419%40             # 116-350%20
+#SBATCH --mem=16G
 
+
+python main_execute.py $SLURM_ARRAY_TASK_ID
 ```
+```#SBATCH --array=0-419%40 ``` is set to the index 0 to 419, but can be changed to any integer. %40 refers to a maximum of 40 jobs that are commited in parallel. As soon as one job is finished, another one starts, but never more than 40 jobs simultaneously. The amount of parallel jobs must be changed according to the CPU limitations.
+```#SBATCH --mem=16G`` defines the amount of memory used by the jobs.\
+
+Start the job in the terminal with:
+```
+sbatch run_script_parallel.sh
+```
+### Run in queque 
 
 Then open ‘run_script_parallel.sh’ to change how many polygons are used to download Sentinel data.
 ```
