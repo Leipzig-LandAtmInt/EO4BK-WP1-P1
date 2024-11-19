@@ -54,7 +54,7 @@ CROPTYPE = 'Barley'
 ```
 ```HOME``` must be changed to the home directory in which this repository is installed. \
 ```YEAR``` must be changed to the YEAR that is downloaded. \
-```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input lucas_2022.gpgk and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
+```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input data, e.g. lucas_2018.gpgk and lucas_2022.gpgk, and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
 ```CROPTYPE``` must be changed according to the LUCAS reference cropy type defined in the EO4BK nomenclature (V1.1) for which Sentinel data is downloaded. \
 
 After changes are made the ```.env``` needs to be saved. 
