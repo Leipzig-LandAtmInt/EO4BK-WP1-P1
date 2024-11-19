@@ -1,0 +1,15 @@
+{
+    "Acknowledgment": "European Commission, Joint Research Centre (JRC) (2018)",
+    "Description": "ID of the LUCAS theoretical point",
+    "Detailed description": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LUCAS/LUCAS_harmonised/3_supporting/LUCAS2018-C1-Instructions.pdf",
+    "Download link": "https://data.jrc.ec.europa.eu/dataset/cfe66a0c-bdee-4074-96e1-a2f7030b9515#dataaccess",
+    "How to cite": "European Commission, Joint Research Centre (JRC) (2018): LUCAS Copernicus 2018. European Commission, Joint Research Centre (JRC) [Dataset] PID: http://data.europa.eu/89h/cfe66a0c-bdee-4074-96e1-a2f7030b9515",
+    "Original Name": "point_id",
+    "PID": "http://data.europa.eu/89h/cfe66a0c-bdee-4074-96e1-a2f7030b9515",
+    "Processing Step": "Processing is conducted by LUCAS",
+    "Value Origin": "This field is defined by LUCAS",
+    "_ARRAY_DIMENSIONS": [
+        "index"
+    ],
+    "long_name": "Point Identification"
+}
