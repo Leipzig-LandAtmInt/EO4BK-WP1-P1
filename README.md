@@ -99,17 +99,17 @@ done
 Start the job in the terminal using: 
 ```
 conda activate wp1_d21_V02
-./run_script_parallel.sh
+./run_script_linear.sh
 ```
 ### TMUX
-Both variants can be executed in the background by executing the following commands in the terminal:
+Both variants can be executed in the background by executing the following commands in the terminal. In the example the ```run_script_linear.sh``` is executed. 
 
 ```
 # to create a new session
 $ tmux new -s <name>
 # then execute the commands from above
 $ conda activate wp1_d21_V02
-$ ./run_script_parallel.sh
+$ ./run_script_linear.sh
 # go back outside the session without closing
 $ tmux detach
 # check on existing sessions
