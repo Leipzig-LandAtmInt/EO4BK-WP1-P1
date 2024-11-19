@@ -1,4 +1,4 @@
-# EO4BK-WP1-P1
+# EO4BK-WP1-P1 D2.1_1.1_0.2
 
 ## Install the D2.1_1.1_0.2 branch
 
