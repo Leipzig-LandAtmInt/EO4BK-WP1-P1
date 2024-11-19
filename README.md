@@ -2,9 +2,9 @@
 
 ## Install the D2.1_1.1_0.2 branch
 
-The branch can be installed with 
+The branch can be installed in the terminal with
 ```
-$ git clone -b D2.1_V1.1_0.2  https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
+git clone -b D2.1_V1.1_0.2  https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
 ```
 
 ## Install Conda environment
