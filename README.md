@@ -27,6 +27,7 @@ $ conda activate wp1_d21_V02
 
 ## How to use this pipeline
 
+### Change Input Variables
 Open the D2.1_V1.1_0.2 folder: \
 Open the ‘.env’ file to change the input variables. If .env is hidden by Github by default, open .env with ```nano``.
 The .env looks like:
@@ -45,7 +46,16 @@ CROPTYPE = 'Barley'
 ```HOME``` must be changed to the home directory in which this repository is installed. \
 ```YEAR``` must be changed to the YEAR that is downloaded. \
 ```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input lucas_2022.gpgk and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
-```CROPTYPE``` must be changed according to the LUCAS reference cropy type defined in the EO4BK nomenclature (V1.1) for which Sentinel data is downloaded. 
+```CROPTYPE``` must be changed according to the LUCAS reference cropy type defined in the EO4BK nomenclature (V1.1) for which Sentinel data is downloaded. \
+
+After changes are made the ```.env``` needs to be saved. 
+
+#### Run in parallel
+
+After the input variables are defined. Open ```run_script_parallel.sh```\
+```
+
+```
 
 Then open ‘run_script_parallel.sh’ to change how many polygons are used to download Sentinel data.
 ```
