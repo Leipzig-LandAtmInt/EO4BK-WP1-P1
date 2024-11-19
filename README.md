@@ -1,23 +1,5 @@
 # EO4BK-WP1-P1
 
-## Install Conda environment
-Create conda environment from yml file using following command in your terminal
-```
-$ conda env create -f wp1_d21_v0.yml
-```
-Alternatively, The conda environment can be given a customised name with following command in your terminal. 
-```
-$ conda env create -f wp1_d21_v0.yml -n <your name>
-```
-Check whether the new environment is installed.
-```
-$ conda info --envs
-```
-After that conda environment can be activated with
-```
-$ conda activate wp1_d21_v0
-```
-
 ## Branch D2.1_V1.1_0.1
 
 The D2.1_V1.1_0.1 branch contains the D2.1_V1.1_0.1 eo4bk sentle pipeline, which is based on the sentle==2024.10.2 version. This pipeline proved to be unstable due to Dask.
