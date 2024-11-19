@@ -3,7 +3,7 @@
 This pipeline uses LUCAS reference datasets changed by the Jupyter-Notebook in the Jupyter_Notebook branch to download Sentinel data with the newest sentle version (sentle==2024.10.5) by Clemens Mosig. 
 It commits following tasks:
 1. main_execute.py: Pulls input variables from .env; main_function(idx) uses index from .sh files to run through the following steps. After each iteration, the job sleeps for 30 seconds.
-2. _downloadsentle_.py: Uses the sentle==2024.10.5 package to download sentinel data. Since ```save_zarr``` is now stored inside ```sentle.process()```, a dummy_datacube is saved in a folder named after the current index. ```S2_cloud_classification``` is set to ```cpu```, but can also be set to gpu if you follow the (https://github.com/cmosig/sentle).
+2. _downloadsentle_.py: Uses the sentle==2024.10.5 package to download sentinel data. Since ```save_zarr``` is now stored inside ```sentle.process()```, a dummy_datacube is saved in a folder named after the current index. ```S2_cloud_classification``` is set to ```cpu```, but can also be set to gpu if the description (https://github.com/cmosig/sentle) is followed.
 3. _clipp_download_output_.py: The dummy_datacube is clipped to the polygon extentions.
 4. _getdata_harmo_.py: Pulls dimensions and data variables of the clipped dummy_datacube to calculate NDVI, NIRv, kNDVI with spyndex==0.6.0.
 5. _create_xarray_harmo_.py: Retrieves variables, indices and dimensions from ```_getdata_harmo_.py ```. Assigns attributes with ```_create_lucas_attributes_.py``` and ```_create_sentinel_attributes_.py```. Stores everything in an ```xarray.Dataset```.
@@ -78,13 +78,13 @@ python main_execute.py $SLURM_ARRAY_TASK_ID
 ```#SBATCH --array=0-419%40 ``` is set to the index 0 to 419, but can be changed to any integer. %40 refers to a maximum of 40 jobs that are commited in parallel. As soon as one job is finished, another one starts, but never more than 40 jobs simultaneously. The amount of parallel jobs must be changed according to the CPU limitations.\
 ```#SBATCH --mem=16G``` defines the amount of memory used by the jobs.\
 
-Start the job in the terminal with:
+Execute main_execute.py in the terminal with:
 ```
 conda activate wp1_d21_V02
 sbatch run_script_parallel.sh
 ```
 #### Run in for loop 
-Alternatively, the job can also be executed in a for loop. Open ```run_script_linear.sh``:
+Alternatively, the main_execute.py can also be executed in a for loop. Open ```run_script_linear.sh``:
 ```
 #!/bin/bash
 COUNTER=0 
