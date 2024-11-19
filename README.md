@@ -42,9 +42,10 @@ YEAR = '2018'
 DETAIL_LEVEL = 'hd'
 CROPTYPE = 'Barley'
 ```
-```HOME``` must be changed to the home directory in which this repository is installed. 
-```YEAR``` must be changed to the YEAR that is downloaded. 
-```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input lucas_2022.gpgk and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.
+```HOME``` must be changed to the home directory in which this repository is installed. \
+```YEAR``` must be changed to the YEAR that is downloaded. \
+```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input lucas_2022.gpgk and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
+```CROPTYPE``` must be changed according to the LUCAS reference cropy type defined in the EO4BK nomenclature (V1.1) for which Sentinel data is downloaded. 
 
 Then open ‘run_script_parallel.sh’ to change how many polygons are used to download Sentinel data.
 ```
