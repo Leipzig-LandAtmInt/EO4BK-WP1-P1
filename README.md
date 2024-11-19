@@ -66,8 +66,8 @@ After the input variables are defined. Open ```run_script_parallel.sh```\
 
 python main_execute.py $SLURM_ARRAY_TASK_ID
 ```
-```#SBATCH --array=0-419%40 ``` is set to the index 0 to 419, but can be changed to any integer. %40 refers to a maximum of 40 jobs that are commited in parallel. As soon as one job is finished, another one starts, but never more than 40 jobs simultaneously. The amount of parallel jobs must be changed according to the CPU limitations.
-```#SBATCH --mem=16G`` defines the amount of memory used by the jobs.\
+```#SBATCH --array=0-419%40 ``` is set to the index 0 to 419, but can be changed to any integer. %40 refers to a maximum of 40 jobs that are commited in parallel. As soon as one job is finished, another one starts, but never more than 40 jobs simultaneously. The amount of parallel jobs must be changed according to the CPU limitations.\
+```#SBATCH --mem=16G``` defines the amount of memory used by the jobs.\
 
 Start the job in the terminal with:
 ```
