@@ -27,15 +27,34 @@ DETAIL_LEVEL = os.getenv('DETAIL_LEVEL')
 MINICUBE_DUMMYSAVE = (f'{MINICUBE_OUT}/dummyfolder')
 
 # Logger
-logging.basicConfig(
-    level=logging.INFO,  # Set the desired logging level
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.StreamHandler(),  # Logs to the console
-        logging.FileHandler(f'Logs/sentinel_{CROPTYPE}_{YEAR}_{DETAIL_LEVEL}.log')  # Logs to a file
-    ]
-)
-logger = logging.getLogger()
+#logging.basicConfig(
+#     level=logging.INFO,  # Set the desired logging level
+#     format='%(asctime)s - %(levelname)s - %(message)s',
+#     handlers=[
+#         logging.StreamHandler(),  # Logs to the console
+#         logging.FileHandler(f'Logs/sentinel_{CROPTYPE}_{YEAR}_{DETAIL_LEVEL}.log')  # Logs to a file
+#     ]
+# )
+# logger = logging.getLogger()
+
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+def setup_logger(name, log_file, level=logging.INFO):
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(formatter)
+
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    logger.addHandler(handler)
+
+    return logger
+    
+# first logger file for working polygons 
+logger = setup_logger('successful download',f'sentinel_{CROPTYPE}_{YEAR}_{DETAIL_LEVEL}.log') 
+
+# second logger file for error messages 
+logger_error = setup_logger('error download', f'sentinel_ERROR_{CROPTYPE}_{YEAR}_{DETAIL_LEVEL}.log')
+
 
 # Polygon
 lucaspoly = gpd.read_file(f'{HOME}/{LUCAS}/{YEAR}/{CROPTYPE}_{YEAR}_eo4bk.gpkg', layer = f'{DETAIL_LEVEL}_data')
@@ -62,14 +81,32 @@ def main_function(idx):
     # global counter
     i = id_list[idx]
     logger.info(f'Point ID: {i}, Processing ID: {idx}')
-    sentle_download(lcs_eo4bkdata= lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i], MINICUBE_DUMMYSAVE = f'{MINICUBE_DUMMYSAVE}/{idx}',targetcrs = targetcrs, time_span = time_span )
-    sentle_dummy_save = xr.open_zarr(f'{MINICUBE_DUMMYSAVE}/{idx}')
-    output_download_clipped = clipping_datacube(sentle_dummy_save, lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i])
-    # important to set hd = True when dealing with hd data, and ld when dealing with low detail data. 
-    variables = getdata_harmonized(output_download_clipped=output_download_clipped, lcs_eo4bkdata= lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i])
-    # It is less important here, but savings are being made in the wrong direction. 
-    xarray_output = create_xarray(variables, YEAR)
-    save_as_zarr(output_eo4bk_minicube=xarray_output, lcs_eo4bkdata= lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i], main_direction=main_direciton, detail = DETAIL_LEVEL, MINICUBE_DUMMYSAVE= f'{MINICUBE_DUMMYSAVE}/{idx}')
+    logger_error.info(f'Point ID: {i}, Processing ID: {idx}')
+    try: 
+        sentle_download(lcs_eo4bkdata= lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i], MINICUBE_DUMMYSAVE = f'{MINICUBE_DUMMYSAVE}/{idx}',targetcrs = targetcrs, time_span = time_span )
+    except Exception as e:
+        logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not download data.')
+        return 
+    try:
+        sentle_dummy_save = xr.open_zarr(f'{MINICUBE_DUMMYSAVE}/{idx}')
+        output_download_clipped = clipping_datacube(sentle_dummy_save, lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i])
+    except Exception as e:
+        logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not clipp data.')
+        return 
+    try:
+        # important to set hd = True when dealing with hd data, and ld when dealing with low detail data. 
+        variables = getdata_harmonized(output_download_clipped=output_download_clipped, lcs_eo4bkdata= lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i])
+        # It is less important here, but savings are being made in the wrong direction. 
+        xarray_output = create_xarray(variables, YEAR)
+    except Exception as e:
+        logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not create xarray.')
+        return
+    try:
+        save_as_zarr(output_eo4bk_minicube=xarray_output, lcs_eo4bkdata= lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i], main_direction=main_direciton, detail = DETAIL_LEVEL, MINICUBE_DUMMYSAVE= f'{MINICUBE_DUMMYSAVE}/{idx}')
+    except Exception as e:
+        logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not save xarray as datacube.')
+        return 
+        
     logger.info(f"> Starts Sleeping") # Log when Pause starts
     time.sleep(30)
     logger.info(f"> Ends Sleeping")
