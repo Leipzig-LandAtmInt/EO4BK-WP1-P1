@@ -80,7 +80,7 @@ def save_as_zarr(output_eo4bk_minicube,lcs_eo4bkdata, main_direction, detail, MI
     
     # path to the .zipp archive
 
-    zip_path = f'{dir}/{eo4bkclass}_{nuts_3}_{id}.zip'
+    zip_path = f'{dir}/{eo4bkclass}_{nuts_3}_{id}.zarr.zip'
 
     # Initialize ZipStore
     zip_store = zarr.ZipStore(zip_path, mode = 'w')
