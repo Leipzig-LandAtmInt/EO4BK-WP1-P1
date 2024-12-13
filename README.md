@@ -119,6 +119,18 @@ $ tmux attach -t <name>
 # end the session when it is finished
 $ exit 
 ```
+
+# EO4BK-WP1-P1 Quality Check
+
+This script allows the user to check the quality of the created minicubes. It can be executed over the terminal with ```run_qc.sh```. The output is an excel-file that gets generated in the folder of the minicubes and contains following columns:
+- FILE: Is idantical with the name of the minicube
+- START_TIME: Is the starting date of the minicube from time.min()
+- END_TIME: Is the ending date of the minicube form time.max()
+- LEN_LON: Is the length of the longitude-index
+- LEN_LAT: Is refering to the length of the latitude-index
+- LEN_TIME: is the length of the time-index 
+- 
+
 ## Reference
 
 The Vegetation Indicies (VI) are computed with spyndex (https://github.com/awesome-spectral-indices/spyndex)
