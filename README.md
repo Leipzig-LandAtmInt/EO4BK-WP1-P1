@@ -122,14 +122,15 @@ $ exit
 
 # EO4BK-WP1-P1 Quality Check
 
-This script allows the user to check the quality of the created minicubes. It can be executed over the terminal with ```run_qc.sh```. The output is an excel-file that gets generated in the folder of the minicubes and contains following columns:
+This script allows the user to check the quality of the minicubes. It can be executed via terminal command with ```run_qc.sh```. The output is an Excel file that is stored in the minicube fodler and contains the following columns:
 - FILE: Is idantical with the name of the minicube
-- START_TIME: Is the starting date of the minicube from time.min()
-- END_TIME: Is the ending date of the minicube form time.max()
+- START_TIME: Is the start date of the minicube from ```time.min()```
+- END_TIME: Is the end date of the minicube form ```time.max()```
 - LEN_LON: Is the length of the longitude-index
-- LEN_LAT: Is refering to the length of the latitude-index
-- LEN_TIME: is the length of the time-index 
-- 
+- LEN_LAT: Refers to the length of the latitude-index
+- LEN_TIME: Is the length of the time-index 
+
+The other columns store the number of bytes (```nbytes```) of the ```minicube.data_vars()```.
 
 ## Reference
 
