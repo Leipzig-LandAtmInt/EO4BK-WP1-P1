@@ -56,8 +56,8 @@ def zarr_quality_check(zarr_dict, data_path, NUT3, CROPTYPE):
                                 'START_TIME': start_times, 
                                 'END_TIME': end_times, 
                                 'LEN_LON': lon_list,
-                                'LAT_LON':lat_list,
-                                'TIME_LON':time_list})
+                                'LEN_LAT':lat_list,
+                                'LEN_TIME':time_list})
 
 
 
