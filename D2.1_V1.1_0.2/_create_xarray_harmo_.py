@@ -9,7 +9,7 @@ def create_xarray(variables, year):
     '''
     This function creates an xarray with the corresponding attributes 
     '''
-
+    #TODO write time in an ascending format xarray.Dataset.sortby('time')
     lat = variables['lat']
     lon = variables['lon']
     time = variables['time']
