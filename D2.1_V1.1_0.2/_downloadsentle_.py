@@ -1,7 +1,7 @@
 # Test downloadsentle from _sentle_download_
 from sentle import sentle 
 import rioxarray
-
+import shapely
 from shapely.geometry import mapping 
 import geopandas as gpd
 import os
@@ -13,8 +13,10 @@ def sentle_download(lcs_eo4bkdata,MINICUBE_DUMMYSAVE, targetcrs, time_span):
     This function downloads the Sentinel data
     '''
 
-
-    boundary = lcs_eo4bkdata.geometry.bounds
+    # TODO create buffer of 20m before second iteration 
+    # lcs_eo4bkdata_buffered = shapely.buffer(lcs_eo4bkdata.geometry, 20)
+    # boundary = lcs_eo4bkdata_buffered.geometry.bounds
+    boundary = lcs_eo4bkdata.geometry.bounds # remove this 
     bound_left = int(boundary.minx.iloc[0])
     bound_bottom = int(boundary.miny.iloc[0])
     bound_right = int(boundary.maxx.iloc[0])
