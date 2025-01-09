@@ -91,7 +91,7 @@ def main_function(idx):
         sentle_dummy_save = xr.open_zarr(f'{MINICUBE_DUMMYSAVE}/{idx}')
         output_download_clipped = clipping_datacube(sentle_dummy_save, lucaspoly_ov_100sqm[lucaspoly_ov_100sqm['point_id']== i])
     except Exception as e:
-        logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not clipp data.')
+        logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not clip data.')
         return 
     try:
         # important to set hd = True when dealing with hd data, and ld when dealing with low detail data. 
