@@ -8,6 +8,7 @@ import geopandas as gpd
 from _centroid_list_ import create_centroid_list
 from _sampling_ import sampling
 import sys
+import logging
 
 load_dotenv('/home/sc.uni-leipzig.de/ds28kene/testing_stage/copernicus_gls_v2/.env')
 
@@ -86,12 +87,51 @@ elif YEAR == '2022':
 
 croptypelist = list(gpkg_dict.keys())
 #TODO ADD filter for nan
+
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+def setup_logger(name, log_file, level=logging.INFO):
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(formatter)
+
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    logger.addHandler(handler)
+
+    return logger
+
+logger = setup_logger('successful download',f'clms_{ACRONYM}_{YEAR}_{DETAIL_LEVEL}.log') 
+logger_error = setup_logger('error download', f'clms_ERROR_{ACRONYM}_{YEAR}_{DETAIL_LEVEL}.log')
+
+
 def main_function(idx):
     crop = croptypelist[idx]
-    centroid_list = create_centroid_list(crop=crop, gpkg_dict=gpkg_dict)
-    result_df_empty = pd.DataFrame()
-    result_df = sampling(crop = crop,centroid_list = centroid_list,nc_dict = nc_dict,crop_nc_data = result_df_empty,ACRONYM = ACRONYM)
-    result_df.to_csv(f'{SAVE_RESULT}/{YEAR}/{crop}_{ACRONYM}_300.csv', sep=';')
+    logger.info(f'Croptype: {crop}, Processing ID: {idx}')
+    logger_error.info(f'Croptype: {crop}, Processing ID: {idx}')
+    try:
+        centroid_list = create_centroid_list(crop=crop, gpkg_dict=gpkg_dict)
+        logger.info(f'Croptype: {crop}, Processing ID: {idx} centroid list is created')
+    except Exception as e:
+        logger_error.error(f'Croptype: {crop}, Processing ID: {idx}; Did not create centroid list.')
+        return
+    try:  
+        result_df_empty = pd.DataFrame()
+    except Exception as e:
+        logger_error.error(f'Croptype: {crop}, Processing ID: {idx}; Did not create empty Dataframe.')
+        return
+    try:
+        result_df = sampling(crop = crop,centroid_list = centroid_list,nc_dict = nc_dict,crop_nc_data = result_df_empty,ACRONYM = ACRONYM)
+        logger.info(f'Croptype: {crop}, Processing ID: {idx} is sampled')
+    except Exception as e:
+        logger_error.error(f'Croptype: {crop}, Processing ID: {idx}; Did not sample data.')
+        return
+    try:
+        result_df.to_csv(f'{SAVE_RESULT}/{YEAR}/{crop}_{ACRONYM}_300.csv', sep=';')
+    except Exception as e:
+        logger_error.error(f'Croptype: {crop}, Processing ID: {idx}; Did save sample data.')
+        return
+    logger.info(f'Croptype: {crop}, Processing ID: {idx} is saved')
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
