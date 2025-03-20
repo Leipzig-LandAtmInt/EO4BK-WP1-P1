@@ -10,7 +10,7 @@ The branch D2.1_V1.1_0.2 contains the D2.1_V1.1_0.2 eo4bk sentle pipline, which 
 
 ## Branch clms
 
-
+The branch clms contains the pipeline to download copernicus land monitoring global products and to build datacubes.
 
 ## Jupyter Notebooks
 
