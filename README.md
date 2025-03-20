@@ -29,7 +29,6 @@ In main_cglob_execute.py, the following variables needs to be changed:
 ```
 
 HOME = 'folder/of/the/netcdffiles'
-}'
 
 YEAR1 = '2017'
 YEAR2 = '2018'
