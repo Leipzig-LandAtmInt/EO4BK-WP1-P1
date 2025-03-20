@@ -20,9 +20,9 @@ Check whether the ```clob_VARIABLE300_YEAR_GLOBE``` folder only contains netcdf 
 ## 2) Create datacubes from the global netcdf files
 In the second step, the pipeline essentially clips the netcdf data with the reference polygons (as done for V1) to create .zarr.zip files. There is no need to change create_lucas_attribues.py for the brazilien reference datasets as it assigns the correct attributes according to following logic:
 ```
-	CONAB; Soybean, Coffee, Cotton, Soybean-maize, Rice.
-	MapBiomas; Fruit and Nut, Oil Pam
-	TerraClass; Sugarcane <- is missing
+CONAB; Soybean, Coffee, Cotton, Soybean-maize, Rice.
+MapBiomas; Fruit and Nut, Oil Pam
+TerraClass; Sugarcane <- is missing
 
 ```
 In main_cglob_execute.py, the following variables needs to be changed:
