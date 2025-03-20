@@ -10,12 +10,22 @@ import xarray as xr
 
 def build_datacube(value_dic, lon, lat, polygon,CROPTYPE,  VARIABLE,YEAR1, YEAR2, YEAR_overlap):
 
-    fixed_time = [f'{YEAR1}-07-31',f'{YEAR1}-08-10',f'{YEAR1}-08-20',f'{YEAR1}-08-31',f'{YEAR1}-09-10',f'{YEAR1}-09-20',f'{YEAR1}-09-30',f'{YEAR1}-10-10',
+    YEAR1 = int(YEAR1)
+    YEAR2 = int(YEAR2)
+    YEAR_overlap = int(YEAR_overlap)
+
+    if YEAR2 == 2020:
+        fixed_time = [f'{YEAR1}-07-31',f'{YEAR1}-08-10',f'{YEAR1}-08-20',f'{YEAR1}-08-31',f'{YEAR1}-09-10',f'{YEAR1}-09-20',f'{YEAR1}-09-30',f'{YEAR1}-10-10',
+              f'{YEAR1}-10-20',f'{YEAR1}-10-31', f'{YEAR1}-11-10',f'{YEAR1}-11-20',f'{YEAR1}-11-30',f'{YEAR1}-12-10',f'{YEAR1}-12-20',
+              f'{YEAR1}-12-31',f'{YEAR2}-01-10',f'{YEAR2}-01-20',f'{YEAR2}-01-31',f'{YEAR2}-02-10',f'{YEAR2}-02-20',f'{YEAR2}-02-29',f'{YEAR2}-03-10',
+              f'{YEAR2}-03-20',f'{YEAR2}-03-31',f'{YEAR2}-04-10',f'{YEAR2}-04-20',f'{YEAR2}-04-30',f'{YEAR2}-05-10',f'{YEAR2}-05-20',
+              f'{YEAR2}-05-31',f'{YEAR2}-06-10',f'{YEAR2}-06-20',f'{YEAR2}-06-30',f'{YEAR2}-07-10',f'{YEAR2}-07-20',f'{YEAR2}-07-31',f'{YEAR2}-08-10']
+    else:
+        fixed_time = [f'{YEAR1}-07-31',f'{YEAR1}-08-10',f'{YEAR1}-08-20',f'{YEAR1}-08-31',f'{YEAR1}-09-10',f'{YEAR1}-09-20',f'{YEAR1}-09-30',f'{YEAR1}-10-10',
               f'{YEAR1}-10-20',f'{YEAR1}-10-31', f'{YEAR1}-11-10',f'{YEAR1}-11-20',f'{YEAR1}-11-30',f'{YEAR1}-12-10',f'{YEAR1}-12-20',
               f'{YEAR1}-12-31',f'{YEAR2}-01-10',f'{YEAR2}-01-20',f'{YEAR2}-01-31',f'{YEAR2}-02-10',f'{YEAR2}-02-20',f'{YEAR2}-02-28',f'{YEAR2}-03-10',
               f'{YEAR2}-03-20',f'{YEAR2}-03-31',f'{YEAR2}-04-10',f'{YEAR2}-04-20',f'{YEAR2}-04-30',f'{YEAR2}-05-10',f'{YEAR2}-05-20',
               f'{YEAR2}-05-31',f'{YEAR2}-06-10',f'{YEAR2}-06-20',f'{YEAR2}-06-30',f'{YEAR2}-07-10',f'{YEAR2}-07-20',f'{YEAR2}-07-31',f'{YEAR2}-08-10']
-
     var_list = [f'{VARIABLE}','LENGTH_AFTER','LENGTH_BEFORE','NOBS','QFLAG','RMSE']
 
     # build data_vars 
