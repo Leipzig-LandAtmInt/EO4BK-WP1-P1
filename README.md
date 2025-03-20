@@ -11,5 +11,10 @@ variable = 'fcover'
 
 YEAR = '2018'
 ```
+To  download, execute the shell script. It should download a whole year. The shell script inserts a 'y' variable everytime the API askes for permission to downloading a netcdf file.
+
+### Knwon Problems
+
+Check whether the ```clob_VARIABLE300_YEAR_GLOBE``` folder only contains netcdf files without subfolders. The script should unpack the subfolders that are created during the download and then delete them. However, this sometimes seems to fail.
 
 ## 2) 
