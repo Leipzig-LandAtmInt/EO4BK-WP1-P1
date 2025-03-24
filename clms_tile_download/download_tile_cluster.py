@@ -37,11 +37,21 @@ df = pd.DataFrame(data = rows, columns = ['Identifier', 'URL', 'Size(MB)'])
 df = df[df['Identifier'].str.contains(f"{YEAR}")]
 # Because the final product does not contain RT
 
-if YEAR == '2017' or YEAR == '2018' or YEAR == '2019' or YEAR == '2020':
+# Because 2020 there a two July and Augsut Products for 2020:
+if YEAR == '2020':
+    df = df[(df['Identifier'].str.contains("RT6")) | (~df['Identifier'].str.contains("RT"))]
+    df = df[(~df['Identifier'].str.contains("c_gls_LAI300_202008310000")) & 
+            (~df['Identifier'].str.contains("c_gls_LAI300_20200820000"))  & 
+            (~df['Identifier'].str.contains("c_gls_LAI300_202008100000")) & 
+            (~df['Identifier'].str.contains("c_gls_LAI300_202007310000")) & 
+            (~df['Identifier'].str.contains("c_gls_LAI300_202007200000")) & 
+            (~df['Identifier'].str.contains("c_gls_LAI300_202007100000"))]
+
+if YEAR == '2017' or YEAR == '2018' or YEAR == '2019':
     df = df[~df['Identifier'].str.contains("RT")]  # for 2018 // 2017
 
 elif YEAR == '2021' or YEAR == '2022' or YEAR == '2023':
-    df = df[df['Identifier'].str.contains("RT6")]   # for 2022
+    df = df[df['Identifier'].str.contains("RT6")]   # for 2022'
 
 
 
