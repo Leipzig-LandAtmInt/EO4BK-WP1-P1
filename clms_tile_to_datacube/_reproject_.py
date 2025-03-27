@@ -27,7 +27,7 @@ def reproject_datacube(datacube):
     else:
         datacube1 = datacube
 
-    datacube2 = datacube1.rio.reproject("EPSG:3035",resampling=Resampling.nearest  ,nodata=np.nan , resolution = (200,300)) 
+    datacube2 = datacube1.rio.reproject("EPSG:5641",resampling=Resampling.nearest  ,nodata=np.nan , resolution = (200,300)) 
     # drop artificial extention again to reduce size
     #if datacube.x.size == 1 and datacube.y.size ==1:
 
