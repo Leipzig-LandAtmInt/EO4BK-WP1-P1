@@ -25,9 +25,10 @@ VARIABLE = 'FCOVER'
 
 DETAIL_LEVEL = 'hd'
 CROPTYPE = 'Rice'
+REFERENCE_SOURCE = 'LEM'
 
 
-POLYGON = gpd.read_file(f"{HOME}/brazil/{CROPTYPE}_{YEAR_overlap}_eo4bk.gpkg")
+POLYGON = gpd.read_file(f"{HOME}/brazil/{CROPTYPE}_{YEAR_overlap}_{REFERENCE_SOURCE}_eo4bk.gpkg")
 
 # CGLOB Data 
 VARIABLE = 'FCOVER'
@@ -90,7 +91,7 @@ def main_function(idx):
         logger_error.error(f'Point ID: {i}, Processing ID: {idx}; Did not sample data.')
     
     try: 
-        datacube = build_datacube(value_dic, lon, lat, POLYGON_ov_100sqm[POLYGON_ov_100sqm['point_id'] == i], CROPTYPE, VARIABLE, YEAR1, YEAR2, YEAR_overlap)
+        datacube = build_datacube(value_dic, lon, lat, POLYGON_ov_100sqm[POLYGON_ov_100sqm['point_id'] == i], REFERENCE_SOURCE, VARIABLE, YEAR1, YEAR2, YEAR_overlap)
 
     except Exception as e:
 

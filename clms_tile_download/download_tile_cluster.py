@@ -13,7 +13,7 @@ catalogue = Catalogue(config)
 
 variable = 'fcover'
 
-YEAR = '2018'
+YEAR = '2020'
 
 COLLECTION = f"clms_global_{variable}_300m_v1_10daily_netcdf"
 rows = []

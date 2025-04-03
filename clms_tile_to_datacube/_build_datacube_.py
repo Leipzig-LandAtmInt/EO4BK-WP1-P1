@@ -8,7 +8,7 @@ import xarray as xr
 
 
 
-def build_datacube(value_dic, lon, lat, polygon,CROPTYPE,  VARIABLE,YEAR1, YEAR2, YEAR_overlap):
+def build_datacube(value_dic, lon, lat, polygon, reference_source,  VARIABLE,YEAR1, YEAR2, YEAR_overlap):
 
     YEAR1 = int(YEAR1)
     YEAR2 = int(YEAR2)
@@ -63,7 +63,7 @@ def build_datacube(value_dic, lon, lat, polygon,CROPTYPE,  VARIABLE,YEAR1, YEAR2
 
         datacube[f'cglob_{var}'].attrs.update(attr)
 
-    for var, attr in create_ref_attributes(CROPTYPE, polygon['point_id'], YEAR_overlap).items():
+    for var, attr in create_ref_attributes(reference_source, polygon['point_id'], YEAR_overlap).items():
         datacube[f'lcs_{var}'].attrs.update(attr)
     
     return datacube
