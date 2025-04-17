@@ -96,6 +96,8 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
                         pos_day2 = np.nan
                     
                     try:
+                        # The case if both the day of the Peak Season 1 and the day of peak Season 2 exists then 
+                        # they should be compared and the first Peak within the year is becoming the first growing season
 
                         if (not np.isnan(pos_day1)) and (not np.isnan(pos_day2)):
 
@@ -109,14 +111,20 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
                                 season2_array[:,i,j]= phenometric_sgl_array
                             
                             rpd_array[:,i,j] = phenomtric_rpd_array
+                        # if pos2 does not exists but pos1, as it is needed in the first case, the first growing season
+                        # is assigned to the season1_array
+                        elif not np.isnan(pos_day1):
 
-                        # elif not np.isnan(pos_day1.data):
+                            season1_array[:,i,j]= phenometric_sgl_array
 
-                        #     season1_array[:,i,j]= phenometric_sgl_array
+                        # if the first peak does not exists, but only the second, which can't be true in no cases because
+                        # pos1 is the maximum of the season without any other condition, but if for some reason the case 
+                        # still apears then the second seaon is assigned to the firts one. 
+                        # However, this will never happen. 
 
-                        # elif not np.isnan(pos_day2.data) and phenometric_dbl_array is not None:
+                        elif np.isnan(pos_day1) and not np.isnan(pos_day2) and phenometric_dbl_array is not None:
 
-                        #     season1_array[:,i,j] = phenometric_dbl_array
+                            season1_array[:,i,j] = phenometric_dbl_array
 
                     except Exception as e:
                         print({e})
