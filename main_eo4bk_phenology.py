@@ -12,6 +12,7 @@ from _build_datacube_ import build_datacube
 import re
 import zarr
 import logging
+import pandas as pd
 # load directions
 
 HOME = '/home/sc.uni-leipzig.de/ds28kene/eo4bksentleD2.2_V0.1'
@@ -246,14 +247,16 @@ def main_function(idx):
             result_dic_season2[vi_type] = season2   
             rpd_dic[vi_type]            = rpd
 
-            if result_dic_season2[vi_type] is None:
+            # checks if all entries of the entire result_dic_season2 is empty 
+            if all(np.all(pd.isna(v)) for v in result_dic_season2[vi_type].values()) is True:
 
                 cube = build_datacube(xarray_data, xarray_data[f'sent_{vi_type}'], smoothed_arrays[vi_type], result_dic_season1[vi_type])
-            
+                
             else:
 
                 cube = build_datacube(xarray_data, xarray_data[f'sent_{vi_type}'], smoothed_arrays[vi_type], result_dic_season1[vi_type], result_dic_season2[vi_type], rpd_dic[vi_type])
-            
+
+
             all_datacubes.append(cube)
 
         datacube = xr.merge(all_datacubes)
