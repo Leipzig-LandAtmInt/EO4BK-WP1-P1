@@ -42,13 +42,16 @@ def getdata_harmonized(output_download_clipped, lcs_eo4bkdata):
     
  
     ## Calculate Indicies 
-        
+    # Normalize
+    b08_norm = b08/10000  
+    b04_norm = b04/10000
+    b02_norm = b02/10000 
     # NDVI 
     ndvi = spyndex.computeIndex(
         index = ["NDVI"],
         params = {
-            "N" : b08,
-            "R" : b04
+            "N" : b08_norm,
+            "R" : b04_norm
         }
     )
 
@@ -57,8 +60,8 @@ def getdata_harmonized(output_download_clipped, lcs_eo4bkdata):
     nirv = spyndex.computeIndex(
         index = ["NIRv"],
         params = {
-            "N" : b08,
-            "R" : b04
+            "N" : b08_norm,
+            "R" : b04_norm
         }
         
     )
@@ -67,9 +70,9 @@ def getdata_harmonized(output_download_clipped, lcs_eo4bkdata):
         "kNN" : 1.0,
         "kNR" : spyndex.computeKernel(
             kernel = "RBF",
-            params = {"a": b08,
-                      "b": b04,
-                      "sigma": 0.5 *( b08 + b04)}
+            params = {"a": b08_norm,
+                      "b": b04_norm,
+                      "sigma": 0.5 *( b08_norm + b04_norm)}
                       ),
             }
 
@@ -82,9 +85,9 @@ def getdata_harmonized(output_download_clipped, lcs_eo4bkdata):
             "C2": spyndex.constants["C2"].value,
             "g": spyndex.constants["g"].value,
             "L": spyndex.constants["L"].value,
-            "N": b08/10000,
-            "R": b04/10000,
-            "B": b02/10000,
+            "N": b08_norm,
+            "R": b04_norm,
+            "B": b02_norm,
         },
     )
 
