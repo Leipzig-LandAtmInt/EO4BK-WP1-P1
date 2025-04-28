@@ -82,9 +82,9 @@ def getdata_harmonized(output_download_clipped, lcs_eo4bkdata):
             "C2": spyndex.constants["C2"].value,
             "g": spyndex.constants["g"].value,
             "L": spyndex.constants["L"].value,
-            "N": b08,
-            "R": b04,
-            "B": b02,
+            "N": b08/10000,
+            "R": b04/10000,
+            "B": b02/10000,
         },
     )
 
