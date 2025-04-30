@@ -61,7 +61,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
                             mask = (phenoclass.time <= sos_day1) | (phenoclass.time >= eos_day1)
 
                         else:
-                            mask = (phenoclass.time <= pos_day1.data - np.timedelta64(60, 'D')) | (phenoclass.time >= pos_day1.data + np.timedelta64(60, 'D'))
+                            mask = (phenoclass.time <= pos_day1.data - np.timedelta64(80, 'D')) | (phenoclass.time >= pos_day1.data + np.timedelta64(80, 'D'))
 
                         off_season_max = np.max(phenoclass.var[mask])
 
