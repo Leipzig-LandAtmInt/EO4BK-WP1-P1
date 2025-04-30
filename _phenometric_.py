@@ -32,7 +32,7 @@ class phenometric():
 
         
         # SOS the day at which the time-series is the first time over the threshold
-        pct = ((np.max(self.var) - np.min(self.var)) * per / 100) + np.min(self.var)
+        pct = ((peak - np.min(self.var)) * per / 100) + np.min(self.var)
 
         #sos_doy = self.doy[self.doy <= peak][self.var[self.doy <= peak] <= pct].max() + 1  # to get the first date that has crossed the threshold
 
