@@ -85,18 +85,18 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
         inter_results_qf.append(qf_da)
 
         # Phenometric Season 1
-        qf_vars_pheno = ['SOS_10', 'EOS_10', 'SOS_20', 'EOS_20', 'SOS_30', 'EOS_30', 'POS']
+        # qf_vars_pheno = ['SOS_10', 'EOS_10', 'SOS_20', 'EOS_20', 'SOS_30', 'EOS_30', 'POS_10', 'POS_20', 'POS_30']
         qf_data_vars_pheno = {}
 
         for per in ['10', '20', '30']:
             SOS, EOS, POS = result_dic_season1[per]
             qf_data_vars_pheno[f'SOS_{per}'] = SOS
             qf_data_vars_pheno[f'EOS_{per}'] = EOS
-            qf_data_vars_pheno['POS'] = POS
+            qf_data_vars_pheno[f'POS_{per}'] = POS
 
         # Assume POS is the same for all, or take the one from '10'
         # qf_data_vars_pheno['POS'] = result_dic_season1['10'][2]
-        
+        qf_vars_pheno = list(qf_data_vars_pheno.keys())
         qf_stack_pheno = np.stack(
             [qf_data_vars_pheno[var].data for var in qf_vars_pheno],
             axis=0
@@ -126,7 +126,7 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
                         qf_data_vars_pheno2[f'EOS_{per}'] = EOS
 
                     if not np.all(np.isnan(POS)):
-                        qf_data_vars_pheno2['POS'] = POS  # Only one POS key, possibly overwritten
+                        qf_data_vars_pheno2[f'POS_{per}'] = POS  
 
                     if rpd:
 
@@ -167,7 +167,7 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
         f"{varname}_inter": smoothed_combined,
         f"{varname}_QF": qf_combined,
         f"{varname}_PHENO": qf_combined_pheno,
-        "lcs_point_id":xarray_data.lcs_point_id
+        "ref_point_id":xarray_data.ref_point_id
     }
     
     datacube_vars[f'{varname}_PHENO'].attrs = {'Description':'Phenological dates of the first growing season.','Processing Steps':'Phenological dates start of the season (SOS), end of the season (EOS) and the peak of the season (POS) were calculated using the 10%, 20%, 30% threshold according to Maleki et al., 2020 (doi:10.3390/rs12132104).'}

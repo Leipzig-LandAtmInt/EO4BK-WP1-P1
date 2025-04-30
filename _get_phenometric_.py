@@ -69,13 +69,8 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
 
                         phenomtric_rpd_array[0] = float(rpd)
 
-                        if rpd >= DIFFERENCE_BETWEEN_PEAKS:
+                        if rpd <= DIFFERENCE_BETWEEN_PEAKS:
 
-                            phenometric_dbl_array = None
-                            pos_day2 = np.nan
-
-                        else:
-                            
                             phenometric_dbl_array = np.full((3,), np.nan)
 
                             sos2, eos2, pos2, sos_day2, eos_day2, pos_day2 = phenoclass.percentage(off_season_max, per)
@@ -87,8 +82,20 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
                             if eos2 is not None:
 
                                 phenometric_dbl_array[1] = int(eos2)
+                                
+                            if pos2 is not None:
+
                                         
-                            phenometric_dbl_array[2] = int(pos2)
+                                phenometric_dbl_array[2] = int(pos2)
+
+                            # if pos_day2 is not None:
+
+                            #     phenometric_dbl_array[5] = int(pos_day2)
+
+                        else:
+                            
+                            phenometric_dbl_array = None
+                            pos_day2 = np.nan
 
 
                     except (AttributeError, TypeError):
@@ -96,8 +103,6 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
                         pos_day2 = np.nan
                     
                     try:
-                        # The case if both the day of the Peak Season 1 and the day of peak Season 2 exists then 
-                        # they should be compared and the first Peak within the year is becoming the first growing season
 
                         if (not np.isnan(pos_day1)) and (not np.isnan(pos_day2)):
 
@@ -111,18 +116,12 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS ):
                                 season2_array[:,i,j]= phenometric_sgl_array
                             
                             rpd_array[:,i,j] = phenomtric_rpd_array
-                        # if pos2 does not exists but pos1, as it is needed in the first case, the first growing season
-                        # is assigned to the season1_array
-                        elif not np.isnan(pos_day1):
+
+                        elif not np.isnan(pos_day1.data):
 
                             season1_array[:,i,j]= phenometric_sgl_array
 
-                        # if the first peak does not exists, but only the second, which can't be true in no cases because
-                        # pos1 is the maximum of the season without any other condition, but if for some reason the case 
-                        # still apears then the second seaon is assigned to the firts one. 
-                        # However, this will never happen. 
-
-                        elif np.isnan(pos_day1) and not np.isnan(pos_day2) and phenometric_dbl_array is not None:
+                        elif np.isnan(pos_day1.data) and not np.isnan(pos_day2.data):
 
                             season1_array[:,i,j] = phenometric_dbl_array
 

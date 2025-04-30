@@ -91,7 +91,7 @@ WINDOW_WITHOUT_SECOND_POS = 120  #only matters if sos or eos of the first peak o
 # everything smaller than DIFFERENCE_BETWEEN_PEAKS, e.g. 60% is considered another growing season. If the 
 # difference is more than 60% it is considered noise 
 
-DIFFERENCE_BETWEEN_PEAKS = 60 
+DIFFERENCE_BETWEEN_PEAKS = 40 
 
 # perenctage thresholds to define the start and the end of the season
 
