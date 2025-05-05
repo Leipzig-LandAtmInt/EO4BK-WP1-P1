@@ -2,7 +2,7 @@ import copy
 import numpy as np
 from _phenometric_ import phenometric
 import xarray as xr
-
+import pandas as pd
 
 def is_valid(val):
     if val is None:
@@ -24,41 +24,42 @@ def check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2):
     sos2 = sos_day2
     eos2 = eos_day2
 
-    if pos1 < pos2:
+    if pos1.values < pos2.values:
         if not pd.isnull(sos1):
-            if sos1 > pos1 or sos1 > pos2:
+            if sos1.values > pos1.values or sos1.values > pos2.values:
                 sos_day1 = np.nan
         if not pd.isnull(eos1):
-            if eos1 < pos1 or eos1 > pos2:
+            if eos1.values < pos1.values or eos1.values > pos2.values:
                 eos_day1 = np.nan
         if not pd.isnull(sos2):
-            if sos2 < pos2 or sos2 > pos1:
+            if sos2.values < pos2.values or sos2.values > pos1.values:
                 sos_day2 = np.nan
         if not pd.isnull(eos2):
-            if eos2 < pos1 or eos2 < pos2:
+            if eos2.values < pos1.values or eos2.values < pos2.values:
                 eos_day2 = np.nan
         if not pd.isnull(eos1) and not pd.isnull(sos2):
-            if eos1 > sos2:
+            if eos1.values > sos2.values:
                 eos_day1 = np.nan
 
-    elif pos2 < pos1:
+    elif pos2.values < pos1.values:
         if not pd.isnull(sos1):
-            if sos1 > pos1 or sos1 < pos2:
+            if sos1.values > pos1.values or sos1.values < pos2.values:
                 sos_day1 = np.nan
         if not pd.isnull(eos1):
-            if eos1 < pos1 or eos1 < pos2:
+            if eos1.values < pos1.values or eos1.values < pos2.values:
                 eos_day1 = np.nan
         if not pd.isnull(sos2):
-            if sos2 > pos2 or sos2 > pos1:
+            if sos2.values > pos2.values or sos2.values > pos1.values:
                 sos_day2 = np.nan
         if not pd.isnull(eos2):
-            if eos2 > pos1 or eos2 < pos2:
+            if eos2.values > pos1.values or eos2.values < pos2.values:
                 eos_day2 = np.nan
         if not pd.isnull(eos2) and not pd.isnull(sos1):
-            if eos2 > sos1:
+            if eos2.values > sos1.values:
                 eos_day2 = np.nan
 
     return sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2
+
 
 def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDOW_WITHOUT_SECOND_POS):
     DIFFERENCE_BETWEEN_PEAKS = int(DIFFERENCE_BETWEEN_PEAKS)
