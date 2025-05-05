@@ -1,8 +1,10 @@
 import copy
 import numpy as np
 from _phenometric_ import phenometric
-import xarray as xr
 import pandas as pd
+import xarray as xr
+
+
 
 def is_valid(val):
     if val is None:
@@ -13,6 +15,10 @@ def is_valid(val):
         return False
     return True
 
+
+
+# def to_scalar(dt):
+#     return dt.item() if isinstance(dt, xr.DataArray) else dt
 
 
 def check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2):
@@ -61,9 +67,12 @@ def check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2):
     return sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2
 
 
+
 def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDOW_WITHOUT_SECOND_POS):
-    DIFFERENCE_BETWEEN_PEAKS = int(DIFFERENCE_BETWEEN_PEAKS)
+
+    # print("Function get_phenometric called")
     WINDOW_WITHOUT_SECOND_POS = int(WINDOW_WITHOUT_SECOND_POS)
+    DIFFERENCE_BETWEEN_PEAKS = int(DIFFERENCE_BETWEEN_PEAKS)
 
     season1_array = np.full((3, smoothed_array.shape[1], smoothed_array.shape[2]), np.nan)
     season2_array = np.full((3, smoothed_array.shape[1], smoothed_array.shape[2]), np.nan)
@@ -83,6 +92,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                     continue
 
                 try:
+                    # print(f"Trying pixel ({i}, {j}) at {per}%")
                     phenoclass = phenometric(y, time_array)
 
                     # Arrays for storing phenometrics of early and late season
@@ -112,6 +122,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                         sos2 = eos2 = pos2 = sos_day2 = eos_day2 = pos_day2 = np.nan
                     
                     
+                    
                     # === Compare and Sort Seasons ===
                     if (is_valid(pos_day1) and is_valid(pos_day2)):
                         if pos_day1.data < pos_day2.data:
@@ -131,6 +142,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                         elif pos_day1.data > pos_day2.data:
 
                             sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2 = check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2)
+
                            
 
                             if is_valid(pos_day2): early_season_array[2] = int(pos2) if is_valid(pos_day2) else np.nan
@@ -143,11 +155,13 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
 
 
 
-                            season1_array[:, i, j] = early_season_array
-                            season2_array[:, i, j] = late_season_array
-                            rpd_array[:, i, j] = phenometric_rpd_array
+                        season1_array[:, i, j] = early_season_array
+                        season2_array[:, i, j] = late_season_array
+                        rpd_array[:, i, j] = phenometric_rpd_array
 
-                    elif is_valid(pos_day1):
+                        # print(f'season2_array {i}, {j}:', season2_array[:, i, j])
+
+                    elif is_valid(pos_day1) and is_valid(pos_day2) == False:
                         # Only main season is valid
                         temp = np.full((3,), np.nan)
                         temp[2] = int(pos1)
@@ -155,7 +169,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                         if is_valid(eos_day1): temp[1] = int(eos1)
                         season1_array[:, i, j] = temp
 
-                    elif is_valid(pos_day2):
+                    elif is_valid(pos_day2) and is_valid(pos_day1) == False:
                         # Only second season is valid
                         temp = np.full((3,), np.nan)
                         temp[2] = int(pos2)
@@ -165,6 +179,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
 
                 except Exception as e:
                     print(f"Error at pixel ({i}, {j}) with percentage {per}: {e}")
+                    traceback.print_exc() 
 
         # Store results for this percentile
         result_dic_season1[f'{per}'] = copy.deepcopy(season1_array)
