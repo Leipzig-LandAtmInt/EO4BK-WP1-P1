@@ -1,6 +1,7 @@
 import copy
 import numpy as np
 from _phenometric_ import phenometric
+import xarray as xr
 
 
 def is_valid(val):
@@ -13,122 +14,47 @@ def is_valid(val):
     return True
 
 
-# def check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2):
-#     # Check if values are in correct order
-#     if pos_day1 < pos_day2:
-
-
-#         if not(np.isnan(sos_day1)):
-#             if sos_day1 > pos_day1:
-#                 sos_day1 = np.nan
-#             if sos_day1 > pos_day2:
-#                 sos_day1 = np.nan
-
-        
-#         if not(np.isnan(eos_day1)):
-#             if eos_day1 < pos_day1:
-#                 eos_day1 = np.nan
-#             if eos_day1 > pos_day2:
-#                 eos_day1 = np.nan
-
-#         if not(np.isnan(sos_day2)):
-#             if sos_day2 < pos_day2:
-#                 sos_day2 = np.nan
-#             if sos_day2 > pos_day1:
-#                 sos_day2 = np.nan
-
-#         if not(np.isnan(eos_day2)):
-
-#             if eos_day2 < pos_day1:
-#                 eos_day2 = np.nan
-#             if eos_day2 < pos_day2:
-#                 eos_day2 = np.nan
-
-#         if eos_day1 > sos_day2:
-#             eos_day1 = np.nan
-            
-#     elif pos_day2 < pos_day1:
-
-
-#         if not(np.isnan(sos_day1)):
-#             if sos_day1 > pos_day1:
-#                 sos_day1 = np.nan
-#             if sos_day1 < pos_day2:
-#                 sos_day1 = np.nan
-
-        
-#         if not(np.isnan(eos_day1)):
-#             if eos_day1 < pos_day1:
-#                 eos_day1 = np.nan
-#             if eos_day1 < pos_day2:
-#                 eos_day1 = np.nan
-
-#         if not(np.isnan(sos_day2)):
-#             if sos_day2 > pos_day2:
-#                 sos_day2 = np.nan
-#             if sos_day2 > pos_day1:
-#                 sos_day2 = np.nan
-
-#         if not(np.isnan(eos_day2)):
-
-#             if eos_day2 > pos_day1:
-#                 eos_day2 = np.nan
-#             if eos_day2 < pos_day2:
-#                 eos_day2 = np.nan
-
-#         if eos_day2 > sos_day1:
-#             eos_day2 = np.nan        
-        
-
-
-    
-#     return sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2
-
-import xarray as xr
-
-def to_scalar(dt):
-    return dt.item() if isinstance(dt, xr.DataArray) else dt
 
 def check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2):
     # Convert all dates to scalars for reliable comparison
-    pos1 = to_scalar(pos_day1)
-    pos2 = to_scalar(pos_day2)
-    sos1 = to_scalar(sos_day1)
-    eos1 = to_scalar(eos_day1)
-    sos2 = to_scalar(sos_day2)
-    eos2 = to_scalar(eos_day2)
+    pos1 = pos_day1
+    pos2 = pos_day2
+    sos1 = sos_day1
+    eos1 = eos_day1
+    sos2 = sos_day2
+    eos2 = eos_day2
 
     if pos1 < pos2:
-        if not np.isnan(sos1):
+        if not pd.isnull(sos1):
             if sos1 > pos1 or sos1 > pos2:
                 sos_day1 = np.nan
-        if not np.isnan(eos1):
+        if not pd.isnull(eos1):
             if eos1 < pos1 or eos1 > pos2:
                 eos_day1 = np.nan
-        if not np.isnan(sos2):
+        if not pd.isnull(sos2):
             if sos2 < pos2 or sos2 > pos1:
                 sos_day2 = np.nan
-        if not np.isnan(eos2):
+        if not pd.isnull(eos2):
             if eos2 < pos1 or eos2 < pos2:
                 eos_day2 = np.nan
-        if not np.isnan(eos1) and not np.isnan(sos2):
+        if not pd.isnull(eos1) and not pd.isnull(sos2):
             if eos1 > sos2:
                 eos_day1 = np.nan
 
     elif pos2 < pos1:
-        if not np.isnan(sos1):
+        if not pd.isnull(sos1):
             if sos1 > pos1 or sos1 < pos2:
                 sos_day1 = np.nan
-        if not np.isnan(eos1):
+        if not pd.isnull(eos1):
             if eos1 < pos1 or eos1 < pos2:
                 eos_day1 = np.nan
-        if not np.isnan(sos2):
+        if not pd.isnull(sos2):
             if sos2 > pos2 or sos2 > pos1:
                 sos_day2 = np.nan
-        if not np.isnan(eos2):
+        if not pd.isnull(eos2):
             if eos2 > pos1 or eos2 < pos2:
                 eos_day2 = np.nan
-        if not np.isnan(eos2) and not np.isnan(sos1):
+        if not pd.isnull(eos2) and not pd.isnull(sos1):
             if eos2 > sos1:
                 eos_day2 = np.nan
 
@@ -136,6 +62,7 @@ def check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2):
 
 def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDOW_WITHOUT_SECOND_POS):
     DIFFERENCE_BETWEEN_PEAKS = int(DIFFERENCE_BETWEEN_PEAKS)
+    WINDOW_WITHOUT_SECOND_POS = int(WINDOW_WITHOUT_SECOND_POS)
 
     season1_array = np.full((3, smoothed_array.shape[1], smoothed_array.shape[2]), np.nan)
     season2_array = np.full((3, smoothed_array.shape[1], smoothed_array.shape[2]), np.nan)
@@ -169,7 +96,7 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                     if is_valid(sos_day1) and is_valid(eos_day1):
                         mask = (phenoclass.time <= sos_day1) | (phenoclass.time >= eos_day1)
                     else:
-                        half_width = WINDOW_WITHOUT_SECOND_POS/2
+                        half_width = int(WINDOW_WITHOUT_SECOND_POS/2)
                         mask = (phenoclass.time <= pos_day1.data - np.timedelta64(half_width, 'D')) | \
                                (phenoclass.time >= pos_day1.data + np.timedelta64(half_width, 'D'))
 
@@ -183,7 +110,6 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                     else:
                         sos2 = eos2 = pos2 = sos_day2 = eos_day2 = pos_day2 = np.nan
                     
-                    print(per, i, j, is_valid(pos_day1) and i, j , is_valid(pos_day2))
                     
                     # === Compare and Sort Seasons ===
                     if (is_valid(pos_day1) and is_valid(pos_day2)):
@@ -204,12 +130,6 @@ def get_phenometric(smoothed_array, xarray_data, DIFFERENCE_BETWEEN_PEAKS, WINDO
                         elif pos_day1.data > pos_day2.data:
 
                             sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2 = check_order(sos_day1, pos_day1, eos_day1, sos_day2, pos_day2, eos_day2)
-                            print('sos_day1',sos_day1)
-                            print('pos_day1',pos_day1)
-                            print('eos_day1',eos_day1)
-                            print('sos_day2',sos_day2)
-                            print('pos_day2',pos_day2)
-                            print('eos_day2',eos_day2)
                            
 
                             if is_valid(pos_day2): early_season_array[2] = int(pos2) if is_valid(pos_day2) else np.nan
