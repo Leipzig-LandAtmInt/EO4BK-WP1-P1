@@ -1,8 +1,10 @@
 import numpy as np
 import xarray as xr
 from scores.continuous import rmse
+import calendar
 
-def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_dic_season2=None, rpd = None):
+
+def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_dic_season2=None, rpd_dic = None):
     '''
     Dataset:
     - smoothed_kndvi: (INTER, time, lat, lon)
@@ -25,14 +27,7 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
         "HANTS": smoothed_data  # shape: (time, lat, lon)
     }
 
-    qf_vars = [
-        'RMSE',
-        'RSQ',
-        'NUM_ORIG_DJF',
-        'NUM_ORIG_MAM',
-        'NUM_ORIG_JJA',
-        'NUM_ORIG_SON'
-    ]
+    qf_vars = ['RMSE', 'RSQ'] + [f'NUM_ORIG_{str.upper(calendar.month_abbr[month])}' for month in range(1, 13)]
 
     time = xarray_data.time.data
     lat = xarray_data.lat.data
@@ -63,15 +58,19 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
         rsq = pearson_corr**2
         rmse_val = rmse(vi, smoothed_da.sel(INTER = 'hants'), reduce_dims='time')
 
-        season_counts = {
-            f'NUM_ORIG_{season}': vi[vi.time.dt.season == season].count(dim='time')
-            for season in ['DJF', 'MAM', 'JJA', 'SON']
+        # season_counts = {
+        #     f'NUM_ORIG_{season}': vi[vi.time.dt.season == season].count(dim='time')
+        #     for season in ['DJF', 'MAM', 'JJA', 'SON']
+        # }
+        mount_counts = {
+            f'NUM_ORIG_{str.upper(calendar.month_abbr[month])}' : vi[vi.time.dt.month == month].count(dim='time').astype(int)
+            for month in range(1,13)
         }
 
         qf_data_vars = {
             'RMSE': rmse_val,
             'RSQ': rsq,
-            **season_counts
+            **mount_counts
         }
 
         qf_stack = np.stack([qf_data_vars[var].data for var in qf_vars], axis=0)
@@ -118,6 +117,7 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
             for per in ['10', '20', '30']:
                 try:
                     SOS, EOS, POS = result_dic_season2[per]
+                    rpd = rpd_dic[per]
 
                     if not np.all(np.isnan(SOS)):
                         qf_data_vars_pheno2[f'SOS_{per}'] = SOS
@@ -128,13 +128,16 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
                     if not np.all(np.isnan(POS)):
                         qf_data_vars_pheno2[f'POS_{per}'] = POS  
 
-                    if rpd:
+                    if not np.all(np.isnan(rpd)):
+                        
+                        qf_data_vars_pheno2[f'RPD_{per}'] = rpd
 
-                        rpd_ = rpd[per]
 
-                        if not np.all(np.isnan(rpd_)):
+                        # rpd_ = rpd[per]
 
-                            qf_data_vars_pheno2[f'RPD'] = rpd_
+                        # if not np.all(np.isnan(rpd_)):
+
+                        #     qf_data_vars_pheno2[f'RPD_{per}'] = rpd_
 
 
                 except (KeyError, ValueError):  # Covers missing or unpacking issues
@@ -171,7 +174,7 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
     }
     
     datacube_vars[f'{varname}_PHENO'].attrs = {'Description':'Phenological dates of the first growing season.','Processing Steps':'Phenological dates start of the season (SOS), end of the season (EOS) and the peak of the season (POS) were calculated using the 10%, 20%, 30% threshold according to Maleki et al., 2020 (doi:10.3390/rs12132104).'}
-    datacube_vars[f'{varname}_QF'].attrs = {'Long Name':'Quality Flags','Processing Steps':"RSQ (Coefficient of determination) is the squared Pearson's r from the xarray package between the original time-series of a Vegetation Index (VI) and its interpolated counterpart. \nRMSE (Root Mean Squared Error) is calculated using the scores package 2.0.0 between the original time-series and its interpolated counterpart. \nThe NUM_ORIG (number of original observations) per season is the sum of the original observations per season."}
+    datacube_vars[f'{varname}_QF'].attrs = {'Long Name':'Quality Flags','Processing Steps':"RSQ (Coefficient of determination) is the squared Pearson's r from the xarray package between the original time-series of a Vegetation Index (VI) and its interpolated counterpart. \nRMSE (Root Mean Squared Error) is calculated using the scores package 2.0.0 between the original time-series and its interpolated counterpart. \nThe NUM_ORIG (number of original observations) per month as the sum of the original observations per month."}
     # Optionally add PHENO2 if available
     if "inter_results_pheno2" in locals():
         try:
