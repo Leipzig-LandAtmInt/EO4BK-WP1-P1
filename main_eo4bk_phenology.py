@@ -221,12 +221,12 @@ def main_function(idx):
                             high = float(vis.max().values)
                             low = float(vis.min().values)
                             # HiLo = None results with assigning 0 to HiLo which is the default value 
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= None, low = low, high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val)
+                            vi_dic = smoothing_class_vi.HANTS(HiLo= None, low = np.nanmin(y), high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 5)
 
                             smoothed_array_vi[:, i, j] = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
 
                         else: 
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = 0, high = 1, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val)
+                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = np.nanmin(y), high = 1, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 5)
 
                             smoothed_array_vi[:, i, j] = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
 
