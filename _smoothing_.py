@@ -18,24 +18,7 @@ class smoothing_methods:
         self.year = self.time.dt.year
         
         self.datadict = {'TIME':self.time, 'DOY': self.doy, f'{self.varname}':self.var}
-        # self.lower = self.var.reindex(np.arange(-180,self.var.index.max(),1), fill_value = self.var.iloc[0]) # fills up the lower boundaries by the first value of the time-series
-        # self.upper = self.var.reindex(np.arange(0,self.var.index.max()+180,1), fill_value = self.var.iloc[-1]) # fills up the upper boundaries by the last value of the time-series
-        # self.extentvar = pd.concat([self.lower, self.upper ]).groupby(level=0).first()
-        # self.extentdoy = self.extentvar.index
-        # self.extentdict = {'DOY':self.extentdoy, f'{self.varname}':self.extentvar}
-        # # self.datadict = {f'YEAR{self.year.unique().item()}':{'TIME': self.time, 'VAR':self.var}}
 
-
-
-    
-    # def clip_extention(self):
-
-    #     resultdict = {}
-    #     for key in self.extentdict.keys():
-    #         resultdict['TIME'] = self.time
-    #         resultdict[key] = self.extentdict[key][(self.extentdict['DOY'] >= 0) & (self.extentdict['DOY'] < self.doy.max())]
-            
-    #     return resultdict
 
 
 
@@ -142,39 +125,59 @@ class smoothing_methods:
         return [yr, outliers]
 
 
-#    def savgol(self,ws = None, po = None):
+
+
+    # def HANTS(self, HiLo = None, low = None, high = None, fet = None, nf = None, dod = None, delta = None, fill_val = None):
+
+    #     y = np.array(self.var.data)
+    #     y = np.where(np.isnan(y), 0, y)
+    #     ni = len(y)
+
+    #     nb = len(y)
+
+    #     ts = list(range(0,len(y)))
+    #     hants = self.HANTS_function(ni = ni, nb = nb, nf = nf, y = y, ts = ts, HiLo = HiLo, low = low, high = high, fet = fet, dod = dod, delta = delta, fill_val = fill_val)[0]
         
-#        sv = signal.savgol_filter(x = self.datadict[f'{self.varname}'], window_length = ws, polyorder = po)
-#        sv = pd.Series(sv)
-        
-#        self.datadict['SAVGOL'] = sv
-#        return self.datadict
-
-    # def savgol(self,ws = None, po = None):
-        
-    #     sv = signal.savgol_filter(x = self.extentdict[f'{self.varname}'], window_length = ws, polyorder = po)
-    #     sv = pd.Series(sv, index = self.extentdict['DOY'] )
-    #     self.extentdict['SAVGOL'] = sv
-
-    #     # Clip th extented dic to the original expansion 
-    #     resultdict = self.clip_extention()
-        
-    #     #return self.extentdict
-    #     return resultdict
+    #     self.datadict[f'{self.varname}_HANTS'] = hants
 
 
-    def HANTS(self, HiLo = None, low = None, high = None, fet = None, nf = None, dod = None, delta = None, fill_val = None):
+    #     return self.datadict
 
-        y = np.array(self.var.data)
-        y = np.where(np.isnan(y), 0, y)
-        ni = len(y)
+    def HANTS(self, HiLo=None, low=None, high=None, fet=None, nf=None, dod=None, delta=None, fill_val=None, pad_len=5):
+        y_orig = np.array(self.var.data)
+        y_orig = np.where(np.isnan(y_orig), 0, y_orig)
+        ni_orig = len(y_orig)
 
-        nb = len(y)
+        # Pad data with repeated endpoints
+        y_pad = np.concatenate((
+            np.full(pad_len, y_orig[0]),
+            y_orig,
+            np.full(pad_len, y_orig[-1])
+        ))
+        ts_pad = list(range(len(y_pad)))
+        ni = len(y_pad)
+        nb = len(y_pad)
 
-        ts = list(range(0,len(y)))
-        hants = self.HANTS_function(ni = ni, nb = nb, nf = nf, y = y, ts = ts, HiLo = HiLo, low = low, high = high, fet = fet, dod = dod, delta = delta, fill_val = fill_val)[0]
-        
-        self.datadict[f'{self.varname}_HANTS'] = hants
+        # Run padded HANTS
+        hants_padded = self.HANTS_function(
+            ni=ni,
+            nb=nb,
+            nf=nf,
+            y=y_pad,
+            ts=ts_pad,
+            HiLo=HiLo,
+            low=low,
+            high=high,
+            fet=fet,
+            dod=dod,
+            delta=delta,
+            fill_val=fill_val
+        )[0]
 
+        # Remove padding from result
+        hants_result = hants_padded[pad_len:-pad_len]
+
+        # Save to dictionary
+        self.datadict[f'{self.varname}_HANTS'] = hants_result
 
         return self.datadict
