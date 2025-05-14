@@ -74,28 +74,12 @@ fet = 0.05
 
 nf = 4 
 
-dod = 0.5
+dod = 20
 
 delta = 0.5 
 
 fill_val = 0
 
-
-# for phenometric detection 
-
-# the window in days from the first peak in which no other peak is detected 
-
-WINDOW_WITHOUT_SECOND_POS = 120  #only matters if sos or eos of the first peak of a certain threshold are not present
-
-# defines the percenatage difference within another peak is accepted as another growing season and not noise. 
-# everything smaller than DIFFERENCE_BETWEEN_PEAKS, e.g. 60% is considered another growing season. If the 
-# difference is more than 60% it is considered noise 
-
-DIFFERENCE_BETWEEN_PEAKS = 40 
-
-# perenctage thresholds to define the start and the end of the season
-
-PERCENTAGE_LIST = [10,20,30,40]
 
 
 # define loggerfiles
@@ -221,12 +205,12 @@ def main_function(idx):
                             high = float(vis.max().values)
                             low = float(vis.min().values)
                             # HiLo = None results with assigning 0 to HiLo which is the default value 
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= None, low = np.nanmin(y), high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 5)
+                            vi_dic = smoothing_class_vi.HANTS(HiLo= None, low = np.nanmin(y), high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
 
                             smoothed_array_vi[:, i, j] = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
 
                         else: 
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = np.nanmin(y), high = 1, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 5)
+                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = np.nanmin(y), high = 1, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
 
                             smoothed_array_vi[:, i, j] = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
 

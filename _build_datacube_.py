@@ -4,7 +4,8 @@ from scores.continuous import rmse
 import calendar
 
 
-def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_dic_season2=None, rpd_dic = None):
+
+def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, rpd_dic, result_dic_season2=None):
     '''
     Dataset:
     - smoothed_kndvi: (INTER, time, lat, lon)
@@ -87,11 +88,13 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
         # qf_vars_pheno = ['SOS_10', 'EOS_10', 'SOS_20', 'EOS_20', 'SOS_30', 'EOS_30', 'POS_10', 'POS_20', 'POS_30']
         qf_data_vars_pheno = {}
 
-        for per in ['10', '20', '30']:
-            SOS, EOS, POS = result_dic_season1[per]
+        for per in result_dic_season1.keys():
+            SOS, POS, EOS = result_dic_season1[per]
+            rpd = rpd_dic[per][0]
             qf_data_vars_pheno[f'SOS_{per}'] = SOS
             qf_data_vars_pheno[f'EOS_{per}'] = EOS
             qf_data_vars_pheno[f'POS_{per}'] = POS
+            qf_data_vars_pheno[f'RPD'] = rpd
 
         # Assume POS is the same for all, or take the one from '10'
         # qf_data_vars_pheno['POS'] = result_dic_season1['10'][2]
@@ -114,10 +117,10 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
 
             qf_data_vars_pheno2 = {}
 
-            for per in ['10', '20', '30']:
+            for per in result_dic_season2.keys():
                 try:
-                    SOS, EOS, POS = result_dic_season2[per]
-                    rpd = rpd_dic[per]
+                    SOS, POS, EOS = result_dic_season2[per]
+                    rpd = rpd_dic[per][1]
 
                     if not np.all(np.isnan(SOS)):
                         qf_data_vars_pheno2[f'SOS_{per}'] = SOS
@@ -130,7 +133,7 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
 
                     if not np.all(np.isnan(rpd)):
                         
-                        qf_data_vars_pheno2[f'RPD_{per}'] = rpd
+                        qf_data_vars_pheno2[f'RPD'] = rpd
 
 
                         # rpd_ = rpd[per]
@@ -173,14 +176,14 @@ def build_datacube(xarray_data, vi, smoothed_data, result_dic_season1, result_di
         "ref_point_id":xarray_data.ref_point_id
     }
     
-    datacube_vars[f'{varname}_PHENO'].attrs = {'Description':'Phenological dates of the first growing season.','Processing Steps':'Phenological dates start of the season (SOS), end of the season (EOS) and the peak of the season (POS) were calculated using the 10%, 20%, 30% threshold according to Maleki et al., 2020 (doi:10.3390/rs12132104).'}
+    datacube_vars[f'{varname}_PHENO'].attrs = {'Description':'Phenological dates of the first growing season.','Processing Steps':'Phenological dates - start of the season (SOS), end of the season (EOS) and the peak of the season (POS) - were calculated using the 10%, 20%, 30%, 40%, 50% threshold according to Maleki et al., 2020 (doi:10.3390/rs12132104). RPD (Relative Percentage Difference) represents the difference between the highest and second-highest peak. The value is set to 0 if the second-highest peak does not meet the filtering threshold.'}
     datacube_vars[f'{varname}_QF'].attrs = {'Long Name':'Quality Flags','Processing Steps':"RSQ (Coefficient of determination) is the squared Pearson's r from the xarray package between the original time-series of a Vegetation Index (VI) and its interpolated counterpart. \nRMSE (Root Mean Squared Error) is calculated using the scores package 2.0.0 between the original time-series and its interpolated counterpart. \nThe NUM_ORIG (number of original observations) per month as the sum of the original observations per month."}
     # Optionally add PHENO2 if available
     if "inter_results_pheno2" in locals():
         try:
             qf_combined_pheno2 = xr.concat(inter_results_pheno2, dim="INTER")
             datacube_vars[f"{varname}_PHENO2"] = qf_combined_pheno2
-            datacube_vars[f"{varname}_PHENO2"].attrs = {'Description':'Phenological dates of the second growing season.','Processing Steps':'Phenological dates start of the season (SOS), end of the season (EOS) and the peak of the season (POS) were calculated using the 10%, 20%, 30% threshold according to Maleki et al., 2020 (doi:10.3390/rs12132104).'}
+            datacube_vars[f"{varname}_PHENO2"].attrs = {'Description':'Phenological dates of the second growing season.','Processing Steps':'Phenological dates start of the season (SOS), end of the season (EOS) and the peak of the season (POS) were calculated using the 10%, 20%, 30%, 40%, 50% threshold according to Maleki et al., 2020 (doi:10.3390/rs12132104). RPD (Relative Percentage Difference) represents the difference between the highest and second-highest peak, and between the second-highest and third-highest peak. The value is set to 0 if the third-highest peak does not meet the filtering threshold.'}
         except Exception:
             pass  # silently ignore if inter_results_pheno2 is defined but invalid
 
