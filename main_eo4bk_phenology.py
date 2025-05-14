@@ -226,7 +226,7 @@ def main_function(idx):
             
 
 
-            season1, season2, rpd = get_phenometric(smoothed_arrays[vi_type], xarray_data, DIFFERENCE_BETWEEN_PEAKS)
+            season1, season2, rpd = get_phenometric(smoothed_arrays[vi_type], xarray_data, 0.4)
             result_dic_season1[vi_type] = season1
             result_dic_season2[vi_type] = season2   
             rpd_dic[vi_type]            = rpd
