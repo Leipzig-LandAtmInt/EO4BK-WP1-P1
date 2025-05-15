@@ -14,7 +14,7 @@ def filter_peaks(variable, threshold_value):
     if np.all(np.isnan(variable)):
         return [], []
     
-    peaks, _ = find_peaks(variable, prominence=0.02, distance=10) # output is the index of the interp curve
+    peaks, _ = find_peaks(variable, prominence=0.02, distance=20) # output is the index of the interp curve
     # valleys, _ = find_peaks(-variable, prominence=0.02, distance=10)
 
     # for peak in peaks:
