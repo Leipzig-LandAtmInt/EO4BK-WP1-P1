@@ -74,7 +74,7 @@ fet = 0.05
 
 nf = 4 
 
-dod = 20
+dod = 5
 
 delta = 0.5 
 
