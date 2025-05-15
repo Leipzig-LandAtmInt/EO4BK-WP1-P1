@@ -1,6 +1,6 @@
 from scipy.signal import find_peaks
 import numpy as np
-def filter_peaks(variable, threshold_value):
+def filter_peaks(variable, threshold_value, relative_prominence):
 
 
     threshold_value = float(threshold_value)
@@ -14,7 +14,7 @@ def filter_peaks(variable, threshold_value):
     if np.all(np.isnan(variable)):
         return [], []
     
-    peaks, _ = find_peaks(variable, prominence=0.02, distance=20) # output is the index of the interp curve
+    peaks, _ = find_peaks(variable, prominence=relative_prominence, distance=20) # output is the index of the interp curve
     # valleys, _ = find_peaks(-variable, prominence=0.02, distance=10)
 
     # for peak in peaks:

@@ -6,7 +6,7 @@ import pandas as pd
 import xarray as xr
 
 
-def get_phenometric(smoothed_array, xarray_data, threshold_amplitude):
+def get_phenometric(smoothed_array, xarray_data, threshold_amplitude, relative_prominence):
 
     result_dic_season1 = {}
     result_dic_season2 = {}
@@ -36,7 +36,7 @@ def get_phenometric(smoothed_array, xarray_data, threshold_amplitude):
                 if np.all(np.isnan(y)):
                     continue
 
-                filtered_peak, rpd_peak = filter_peaks(smoothed_array[:,lat, lon], threshold_amplitude)
+                filtered_peak, rpd_peak = filter_peaks(smoothed_array[:,lat, lon], threshold_amplitude, relative_prominence)
 
                 if not filtered_peak:
                     continue

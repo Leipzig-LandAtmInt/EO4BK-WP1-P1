@@ -219,6 +219,11 @@ def main_function(idx):
                         logger_error.error(f"Error at lat{i}, lon {j}:{e}")
 
             smoothed_arrays[vi_type] = smoothed_array_vi
+
+            data_range = np.nanmax(smoothed_arrays[vi_type]) - np.nanmin(smoothed_arrays[vi_type])
+
+
+            relative_prominence = 0.02 * data_range
             # smoothing_classes[vi_type] = smoothing_class_vi
             
 
@@ -226,7 +231,7 @@ def main_function(idx):
             
 
 
-            season1, season2, rpd = get_phenometric(smoothed_arrays[vi_type], xarray_data, 0.4)
+            season1, season2, rpd = get_phenometric(smoothed_arrays[vi_type], xarray_data, 0.4, relative_prominence)
             result_dic_season1[vi_type] = season1
             result_dic_season2[vi_type] = season2   
             rpd_dic[vi_type]            = rpd
