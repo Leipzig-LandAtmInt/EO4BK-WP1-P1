@@ -10,6 +10,10 @@ def filter_peaks(variable, threshold_value):
 
     # map valleys and peaks
 
+    # add savety 
+    if np.all(np.isnan(variable)):
+        return [], []
+    
     peaks, _ = find_peaks(variable, prominence=0.02, distance=10) # output is the index of the interp curve
     # valleys, _ = find_peaks(-variable, prominence=0.02, distance=10)
 
@@ -31,6 +35,10 @@ def filter_peaks(variable, threshold_value):
 
     # Calculate amplitudes at all peaks
     peak_amplitudes = [(peak, variable[peak]) for peak in peaks]
+    
+
+    if len(peaks) == 0:
+        return [], []
     
     filtered_list = []
     rpd_list = []

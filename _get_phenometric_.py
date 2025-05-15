@@ -38,6 +38,9 @@ def get_phenometric(smoothed_array, xarray_data, threshold_amplitude):
 
                 filtered_peak, rpd_peak = filter_peaks(smoothed_array[:,lat, lon], threshold_amplitude)
 
+                if not filtered_peak:
+                    continue
+
                 sos_doy_list = []
                 
                 pos_doy_list = []
