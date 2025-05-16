@@ -200,19 +200,33 @@ def main_function(idx):
                     try:
                         smoothing_class_vi = smoothing_methods(y, time_array)
 
-                        if vi_type == 'nirv':
+                        if vi_type in ['nirv']:
 
-                            high = float(vis.max().values)
-                            low = float(vis.min().values)
-                            # HiLo = None results with assigning 0 to HiLo which is the default value 
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= None, low = np.nanmin(y), high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
+                            high = np.nanmax(y)
+                            low = np.nanmin(y)
+                            HiLo = None
+                        else:
+                            high = 1
+                            low = np.nanmin(y)
+                            HiLo = HiLo
+                        
+                        vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = low, high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
 
-                            smoothed_array_vi[:, i, j] = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
+                        smoothed = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
+                        smoothed_array_vi[:, i, j] = smoothed
 
-                        else: 
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = np.nanmin(y), high = 1, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
+                        y_true = y.compute()
+                        mask = ~np.isnan(y_true)
+                        
+                        ss_res = np.sum((y_true[mask] - smoothed[mask])**2)
+                        ss_tot = np.sum((y_true[mask] - np.nanmean(y_true[mask]))**2)
+                        r2 = 1 - ss_res / ss_tot  
+                        
+                        if r2 > 0.998:
+                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = low, high = high, fet = fet, nf = 3, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
 
-                            smoothed_array_vi[:, i, j] = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
+                            smoothed = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
+                            smoothed_array_vi[:, i, j] = smoothed
 
                     except Exception as e:
 
