@@ -37,7 +37,7 @@ def get_phenometric(smoothed_array, xarray_data, threshold_amplitude, relative_p
                     continue
 
                 filtered_peak, rpd_peak = filter_peaks(smoothed_array[:,lat, lon], threshold_amplitude, relative_prominence)
-
+                
                 if not filtered_peak:
                     continue
 

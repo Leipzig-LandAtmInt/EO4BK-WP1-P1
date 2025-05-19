@@ -15,21 +15,32 @@ import logging
 import pandas as pd
 # load directions
 
-HOME = '/home/sc.uni-leipzig.de/ds28kene/eo4bksentleD2.2_V0.1'
-INPUT_FOLDER = 'input_data'
+#HOME = '/home/sc.uni-leipzig.de/ds28kene/eo4bksentleD2.2_V0.1'
+HOME = '/work/ds28kene-d2v2'
+
+INPUT_FOLDER = 'output_sentinel/Europe'
 
 YEAR = '2018'
 
-CROPTYPE = 'Barley'
+# CROPTYPE = 'Barley'
 
 DETAIL_LEVEL = 'hd'
 
 CONTINENT = 'Europe'
 
+
+# get Croptype variable from shell-script
+if len(sys.argv) != 3:
+    print("Usage: python main_execute.py <CROPTYPE> <SLURM_ARRAY_TASK_ID>")
+    sys.exit(1)
+
+# Get the crop type and SLURM_ARRAY_TASK_ID from the command-line arguments
+CROPTYPE = sys.argv[1]
+
 INPUT_DATA = f'{HOME}/{INPUT_FOLDER}/{YEAR}/{CROPTYPE}/{DETAIL_LEVEL}'
 
 
-OUTPUT_DATA = f'{HOME}/output_data/phenology/{YEAR}/{CROPTYPE}/{DETAIL_LEVEL}'
+OUTPUT_DATA = f'{HOME}/output_pheno/{CONTINENT}/{YEAR}/{CROPTYPE}/{DETAIL_LEVEL}'
 
 os.makedirs(OUTPUT_DATA, exist_ok = True)
 
@@ -66,6 +77,20 @@ NUT_LIST = os.listdir(INPUT_DATA)
 # fill_val = Fill value of missing data 
 
 
+# HiLo = 'Lo'
+
+# low = 0  # is defined in the main_function 
+
+# fet = 0.05
+
+# nf = 4 
+
+# dod = 0.5
+
+# delta = 0.5 
+
+# fill_val = 0
+
 HiLo = 'Lo'
 
 low = 0  # is defined in the main_function 
@@ -79,7 +104,6 @@ dod = 5
 delta = 0.5 
 
 fill_val = 0
-
 
 
 # define loggerfiles
@@ -146,7 +170,7 @@ def main_function(idx):
 
     data = data_list[idx]
 
-    logger.info(f'Processing {data} of idx {idx}')
+    logger.info(f'Processing data: {data}, Processing ID: {idx}')
     
 
     try: 
@@ -169,7 +193,7 @@ def main_function(idx):
         
         all_datacubes = []
 
-        for vi_type in ['ndvi','nirv', 'kndvi']: #, 'nirv', 'kndvi']:
+        for vi_type in ['ndvi','nirv', 'kndvi', 'evi']: #, 'nirv', 'kndvi']:
 
             vis = xarray_data[f'sent_{vi_type}']
         
@@ -253,11 +277,11 @@ def main_function(idx):
             # checks if all entries of the entire result_dic_season2 is empty 
             if all(np.all(pd.isna(v)) for v in result_dic_season2[vi_type].values()) is True:
 
-                cube = build_datacube(xarray_data, xarray_data[f'sent_{vi_type}'], smoothed_arrays[vi_type], result_dic_season1[vi_type])
+                cube = build_datacube(xarray_data, xarray_data[f'sent_{vi_type}'], smoothed_arrays[vi_type], result_dic_season1[vi_type], rpd_dic[vi_type])
                 
             else:
 
-                cube = build_datacube(xarray_data, xarray_data[f'sent_{vi_type}'], smoothed_arrays[vi_type], result_dic_season1[vi_type], result_dic_season2[vi_type], rpd_dic[vi_type])
+                cube = build_datacube(xarray_data, xarray_data[f'sent_{vi_type}'], smoothed_arrays[vi_type], result_dic_season1[vi_type],rpd_dic[vi_type], result_dic_season2[vi_type])
 
 
             all_datacubes.append(cube)
@@ -301,19 +325,29 @@ def main_function(idx):
             datacube.to_zarr(store = zip_store, mode = 'w', compute = True)
 
             zip_store.close()
-    
+
+        logger.info(f'Saved data: {data}, Processing ID: {idx}')
+
     except Exception as e:
 
         logger_error.error(f'Problem {e} of {data} of idx {idx} of pixel j: {j} and i: {i}')
 
             
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
    
 
-    if len(sys.argv) != 2:
+#     if len(sys.argv) != 2:
+#         print("Usage: python script.py <number>")
+#         sys.exit(1)
+
+#     number = int(sys.argv[1])
+#     main_function(number)
+if __name__ == "__main__":
+
+    if len(sys.argv) != 3:
         print("Usage: python script.py <number>")
         sys.exit(1)
 
-    number = int(sys.argv[1])
+    number = int(sys.argv[2])
     main_function(number)

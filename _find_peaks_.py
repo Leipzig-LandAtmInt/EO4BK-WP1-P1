@@ -1,19 +1,19 @@
 from scipy.signal import find_peaks
 import numpy as np
+
 def filter_peaks(variable, threshold_value, relative_prominence):
 
 
     threshold_value = float(threshold_value)
+
+    if np.all(np.isnan(variable)):
+        return [], []
     # mask out nan values
     # mask = np.isfinite(variable)
     # y_vals_clean = variable[mask]
 
     # map valleys and peaks
-
-    # add savety 
-    if np.all(np.isnan(variable)):
-        return [], []
-    
+    # padded = np.pad(variable, (1, 1), mode='constant', constant_values=-np.inf)
     peaks, _ = find_peaks(variable, prominence=relative_prominence, distance=20) # output is the index of the interp curve
     # valleys, _ = find_peaks(-variable, prominence=0.02, distance=10)
 
@@ -36,10 +36,9 @@ def filter_peaks(variable, threshold_value, relative_prominence):
     # Calculate amplitudes at all peaks
     peak_amplitudes = [(peak, variable[peak]) for peak in peaks]
     
-
     if len(peaks) == 0:
         return [], []
-    
+
     filtered_list = []
     rpd_list = []
 

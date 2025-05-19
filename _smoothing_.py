@@ -144,6 +144,8 @@ class smoothing_methods:
     #     return self.datadict
 
     def HANTS(self, HiLo=None, low=None, high=None, fet=None, nf=None, dod=None, delta=None, fill_val=None, pad_len=5):
+        
+        
         y_orig = np.array(self.var.data)
         y_orig = np.where(np.isnan(y_orig), 0, y_orig)
         ni_orig = len(y_orig)
