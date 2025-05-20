@@ -209,7 +209,7 @@ def main_function(idx):
 
                 for j in range(vis.shape[2]):
 
-                    y = vis[:,i,j]
+                    y = vis[:,i,j].values
 
                     time_array = xarray_data.time
 
@@ -228,13 +228,13 @@ def main_function(idx):
 
                             high = np.nanmax(y)
                             low = np.nanmin(y)
-                            HiLo = None
+                            HiLo_val = None
                         else:
                             high = 1
                             low = np.nanmin(y)
-                            HiLo = HiLo
+                            HiLo_val = 'Lo'
                         
-                        vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = low, high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
+                        vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo_val, low = low, high = high, fet = fet, nf = nf, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
 
                         smoothed = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
                         smoothed_array_vi[:, i, j] = smoothed
@@ -247,7 +247,7 @@ def main_function(idx):
                         r2 = 1 - ss_res / ss_tot  
                         
                         if r2 > 0.998:
-                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo, low = low, high = high, fet = fet, nf = 3, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
+                            vi_dic = smoothing_class_vi.HANTS(HiLo= HiLo_val, low = low, high = high, fet = fet, nf = 3, dod = dod, delta = delta, fill_val = fill_val, pad_len = 10)
 
                             smoothed = vi_dic[f'{smoothing_class_vi.varname}_HANTS']
                             smoothed_array_vi[:, i, j] = smoothed
