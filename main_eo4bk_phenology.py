@@ -209,7 +209,7 @@ def main_function(idx):
 
                 for j in range(vis.shape[2]):
 
-                    y = vis[:,i,j].values
+                    y = vis[:,i,j]
 
                     time_array = xarray_data.time
 
