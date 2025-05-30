@@ -19,11 +19,11 @@ git clone -b D2.1_V0.2  https://github.com/Leipzig-LandAtmInt/EO4BK-WP1-P1.git
 ### Install Conda environment
 Create conda environment from yml file using following command in your terminal
 ```
-$ conda env create -f wp1_d21_V02.yml
+$ conda env create -f eo4bk.yml
 ```
 Alternatively, The conda environment can be given a customised name with following command in your terminal. 
 ```
-$ conda env create -f wp1_d21_V02.yml -n <your name>
+$ conda env create -f eo4bk.yml -n <your name>
 ```
 Check whether the new environment is installed.
 ```
@@ -31,7 +31,7 @@ $ conda info --envs
 ```
 After that conda environment can be activated with
 ```
-$ conda activate wp1_d21_V02
+$ conda activate eo4bk
 ```
 
 ## How to use this pipeline
