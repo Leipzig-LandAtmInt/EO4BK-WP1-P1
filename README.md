@@ -56,8 +56,8 @@ REFERENCE_SOURCE = 'CONAB'
 ```YEAR2``` must be set to the ending year of the desired time span to be downloaded. \
 ```YEAR_OVERLAP``` must be change to the last digets of the starting and ending year -> 2017 and 2018 results in 1718. \
 ```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input data, e.g. lucas_2018.gpgk and lucas_2022.gpgk, and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
-```TARGET_CRS```  = Defines the crs the Sentinel-2 will be transformed to. 
-```REFERENCE_SOURCE``` = Defines the reference source that is used to as the reference polygon. Can be either ```LUCAS```, ```CONAB```, ```LEM```, ```LEMplus```, ```MapBiomasDirect``` or ```TerraClass```.
+```TARGET_CRS```  = Defines the crs the Sentinel-2 will be transformed to. \
+```REFERENCE_SOURCE``` = Defines the reference source that is used to as the reference polygon. Can be either ```LUCAS```, ```CONAB```, ```LEM```, ```LEMplus```, ```MapBiomasDirect``` or ```TerraClass```.\
 After changes are made ```main_sentle.py``` must be saved. 
 
 #### Run in parallel
