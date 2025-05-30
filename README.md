@@ -62,7 +62,7 @@ After changes are made ```main_sentle.py``` must be saved.
 
 
 
-#### Run in parallel
+#### Run in parallel on slurm cluster
 
 After the input variables are defined. Open ```crops_100.sh```\
 Here a list or a single ```CROPTYPES``` can be set that is used by the ```main_sentle.py``` and by ```job.sh``` as input variable.
@@ -80,14 +80,50 @@ conda activate eo4bk
 sbatch crops_100.sh
 ```
 
-#### Run in for loop 
-Alternatively, the main_sentle.py can also be executed in a multiprocessing job on a cluster not build on slurm:
-
-```{0..1}`` defines the index via which the code is run through in a loop.\
-Start the job in the terminal using: 
+#### Run as a multiprocessing job on cluster not using slurm
+Alternatively, main_sentle.py can be executed as a multiprocessing job on a cluster that is not based on SLURM.
 ```
-conda activate wp1_d21_V02
-./run_script_linear.sh
+#!/bin/bash
+
+TOTAL=100
+PYTHON_SCRIPT="main_eo4bk_phenology.py"
+CROPTYPE="Sugarcane"  # Change this to your desired crop
+#MAX_PROCS=$(nproc)    # Number of available CPU cores
+MAX_PROCS=10 
+JOBS=()               # Array to track job PIDs
+
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+
+
+
+for (( i=0; i<$TOTAL; i++ )); do
+  echo "Starting job $i"
+  python "$PYTHON_SCRIPT" "$CROPTYPE" "$i" &
+
+  JOBS+=($!)  # Store PID of background job
+
+  # Wait if running jobs reach the number of cores
+  if (( ${#JOBS[@]} >= MAX_PROCS )); then
+    wait -n  # Wait for any job to finish before continuing
+    # Remove completed job PIDs from the array
+    for j in "${!JOBS[@]}"; do
+      if ! kill -0 "${JOBS[j]}" 2>/dev/null; then
+        unset 'JOBS[j]'
+      fi
+    done
+  fi
+done
+
+# Wait for all remaining background jobs to finish
+wait
+```
+
+```
+conda activate eo4bk
+./runMulti.sh
 ```
 ### TMUX
 Both variants can be executed in the background by executing the following commands in the terminal. In the example the ```run_script_linear.sh``` is executed. 
