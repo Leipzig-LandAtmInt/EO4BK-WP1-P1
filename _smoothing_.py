@@ -24,6 +24,20 @@ class smoothing_methods:
 
     def HANTS_function(self, ni, nb, nf, y, ts, HiLo, low, high, fet, dod, delta, fill_val):
         '''
+        This file includes or is derived from code originally available at:
+        https://github.com/gespinoza/hants
+
+        Copyright 2017 Gonzalo E. Espinoza-Dávalos, IHE Delft
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at:
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+        Modifications have been made to the original code.
+
+
         This function applies the Harmonic ANalysis of Time Series (HANTS)
         algorithm originally developed by the Netherlands Aerospace Centre (NLR)
         (http://www.nlr.org/space/earth-observation/).
