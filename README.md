@@ -79,45 +79,10 @@ Execute main_execute.py in the terminal with:
 conda activate eo4bk
 sbatch crops_100.sh
 ```
+
 #### Run in for loop 
 Alternatively, the main_sentle.py can also be executed in a multiprocessing job on a cluster not build on slurm:
-```
-#!/bin/bash
 
-TOTAL=100
-PYTHON_SCRIPT="main_eo4bk_phenology.py"
-CROPTYPE="Sugarcane"  
-#MAX_PROCS=$(nproc)    
-MAX_PROCS=10 
-JOBS=()              
-
-export OMP_NUM_THREADS=1
-export OPENBLAS_NUM_THREADS=1
-export MKL_NUM_THREADS=1
-export NUMEXPR_NUM_THREADS=1
-
-
-
-for (( i=0; i<$TOTAL; i++ )); do
-  echo "Starting job $i"
-  python "$PYTHON_SCRIPT" "$CROPTYPE" "$i" &
-
-  JOBS+=($!)  # Store PID of background job
-
-
-  if (( ${#JOBS[@]} >= MAX_PROCS )); then
-    wait -n  # Wait for any job to finish before continuing
-    # Remove completed job PIDs from the array
-    for j in "${!JOBS[@]}"; do
-      if ! kill -0 "${JOBS[j]}" 2>/dev/null; then
-        unset 'JOBS[j]'
-      fi
-    done
-  fi
-done
-
-wait
-```
 ```{0..1}`` defines the index via which the code is run through in a loop.\
 Start the job in the terminal using: 
 ```
