@@ -3,7 +3,7 @@
 This pipeline uses LUCAS, CONAB, LEM, LEM+, MapBiomasDirect and TerraClass reference datasets to download Sentinel-2 data with the sentle version (sentle==2025.1.4) by Clemens Mosig. 
 It commits following tasks:
 1. main_sentle.py: The variables YEAR, CONTINENT, TARGET_CRS, TIME_SPAN and REFERENCE_SOURCE are set in the begining of the script. CROPTYPE is defined in crops_100.sh. The main_function(idx) uses index from job.sh to run through the following steps. After each iteration, the job sleeps for 30 seconds.
-2. _downloadsentle_.py: Uses the sentle==2024.10.5 package to download sentinel data. Since ```save_zarr``` is now stored inside ```sentle.process()```, a dummy_datacube is saved in a folder named after the current index. ```S2_cloud_classification``` is set to ```cpu```, but can also be set to gpu if the description (https://github.com/cmosig/sentle) is followed.
+2. _downloadsentle_.py: Uses the sentle==2025.1.4 package to download sentinel data. Since ```save_zarr``` is now stored inside ```sentle.process()```, a dummy_datacube is saved in a folder named after the current index. ```S2_cloud_classification``` is set to ```cpu```, but can also be set to gpu if the description (https://github.com/cmosig/sentle) is followed.
 3. _clipp_download_output_.py: The dummy_datacube is clipped to the polygon extentions.
 4. _getdata_harmo_.py: Pulls dimensions and data variables of the clipped dummy_datacube to calculate NDVI, NIRv, kNDVI with spyndex==0.6.0.
 5. _create_xarray_harmo_.py: Retrieves variables, indices and dimensions from ```_getdata_harmo_.py ```. Assigns attributes with ```_create_lucas_attributes_.py``` and ```_create_sentinel_attributes_.py```. Stores everything in an ```xarray.Dataset```.
