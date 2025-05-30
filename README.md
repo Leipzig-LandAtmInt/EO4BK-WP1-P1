@@ -37,27 +37,28 @@ $ conda activate eo4bk
 ## How to use this pipeline
 
 ### Change Input Variables
-Open the D2.1_V1.1_0.2 folder: \
-Open the ‘.env’ file to change the input variables. If .env is hidden by Github by default, open .env with ```nano``.
-The .env looks like:
-
+Open the eo4bkD2.1_V0.2 folder: 
+Open main_sentle.py and change the following input-variables:
 ```
-HOME = '/net/projects/EO4BK/WP1/P1-EO4BK/scripts/EO4BK-Github'
-
-LUCAS_D21_V01 = 'EO4BK-WP1-P1/data/lucas_data_d2.1_V0.1'
-MINICUBE_OUT_D21_V01 = 'EO4BK-WP1-P1/data/minicube_europe_d2.1_V0.1'
-
-
-YEAR = '2018'
+SCRIPT_FOLDER "/Directory/of/the/scripts"
+OUTPUT_FOLDER = "/output/folder"
+CONTINENT = 'Brazil'
+YEAR1 = '2017'
+YEAR2 = '2018'
+YEAR_OVERLAP = '1718'
 DETAIL_LEVEL = 'hd'
-CROPTYPE = 'Barley'
-```
-```HOME``` must be changed to the home directory in which this repository is installed. \
-```YEAR``` must be changed to the YEAR that is downloaded. \
-```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input data, e.g. lucas_2018.gpgk and lucas_2022.gpgk, and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
-```CROPTYPE``` must be changed according to the LUCAS reference cropy type defined in the EO4BK nomenclature (V1.1) for which Sentinel data is downloaded. \
+TARGET_CRS  = CRS.from_string("EPSG:5641")
 
-After changes are made the ```.env``` needs to be saved. 
+REFERENCE_SOURCE = 'CONAB'
+```
+```SCRIPT_FOLDER``` must be changed to the directory in which this repository is installed. \
+```YEAR1``` must be set to the starting year of the desired time span to be downloaded. \
+```YEAR2``` must be set to the ending year of the desired time span to be downloaded. \
+```YEAR_OVERLAP``` must be change to the last digets of the starting and ending year -> 2017 and 2018 results in 1718. \
+```DETAIL_LEVEL``` must be changed in to the level of detail as specified by the Lucas data. The input data, e.g. lucas_2018.gpgk and lucas_2022.gpgk, and the output folder are changed, but not the attributes of the .zarr file, which is due to storage limitations.\
+```TARGET_CRS```  = Defines the crs the Sentinel-2 will be transformed to. 
+```REFERENCE_SOURCE``` = Defines the reference source that is used to as the reference polygon. Can be either LUCAS, CONAB, LEM, LEMplus, MapBiomasDirect or TerraClass
+After changes are made ```main_sentle.py``` must be saved. 
 
 #### Run in parallel
 
