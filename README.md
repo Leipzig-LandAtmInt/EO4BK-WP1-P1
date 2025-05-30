@@ -70,7 +70,7 @@ Here a list or a single ```CROPTYPES``` can be set that is used by the ```main_s
 CROPTYPES=("Rice" "Other_cereals" "Cotton" "Other_root_crops" "Grapes" "Flax" "Other_single_crops" "Olive_groves" "Fruit_and_nut" "Other_permanent_crop" "Sorghum" "Millet")
 ```
 Afterwards open ```job.sh``` to define the approximate number of jobs that should equal the number of reference polygons. 
-```
+
 ```#SBATCH --array=0-419%40 ``` is set to the index 0 to 419, but can be changed to any integer. %40 refers to a maximum of 40 jobs that are commited in parallel. As soon as one job is finished, another one starts, but never more than 40 jobs simultaneously. The amount of parallel jobs must be changed according to the CPU limitations.\
 ```#SBATCH --mem=16G``` defines the amount of memory used by the jobs.\
 
@@ -79,7 +79,7 @@ Execute main_execute.py in the terminal with:
 conda activate eo4bk
 sbatch crops_100.sh
 ```
-```
+
 #### Run in for loop 
 Alternatively, the main_sentle.py can also be executed in a multiprocessing job on a cluster not build on slurm:
 
