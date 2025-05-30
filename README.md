@@ -1,12 +1,12 @@
 # EO4BK-WP1-P1
 
-## Branch D2.1_V1.1_0.1
+## Branch D2.1_V0.2
 
-The D2.1_V1.1_0.1 branch contains the D2.1_V1.1_0.1 eo4bk sentle pipeline, which is based on the sentle==2024.10.2 version. This pipeline proved to be unstable due to Dask.
+The D2.1_V0.2 branch contains the D2.1_V0.2 eo4bk sentle pipeline, which is based on the sentle==2025.1.4 version and rasterio 1.3.10.
 
-## Branch D2.1_V1.1_0.2 
+## Branch D2.1_V1.0
 
-The branch D2.1_V1.1_0.2 contains the D2.1_V1.1_0.2 eo4bk sentle pipline, which is build on the sentle==2024.10.5 version. 
+The D2.1_V1.0 branch contains the D2.1_V1.0 pipeline to retrieve phenological dates from Sentinel-2 Vegetation Indicies. 
 
 ## Branch clms
 
@@ -21,3 +21,6 @@ The Jupyter Notebooks branch contains the Jupyter Notebooks for preprocessing LU
 The Vegetation Indicies (VI) are computed with spyndex (https://github.com/awesome-spectral-indices/spyndex)
 
 The Sentinel 1 and 2 download is done with sentle (https://github.com/cmosig/sentle/tree/main)
+
+The HANTs interpolation used in D2.1_V1.0 is done with https://github.com/gespinoza/hants/tree/master by  Copyright 2017 Gonzalo E. Espinoza-Dávalos, IHE Delft
+Licensed under the Apache License, Version 2.0; http://www.apache.org/licenses/LICENSE-2.0; Modifications have been made to the original code.
