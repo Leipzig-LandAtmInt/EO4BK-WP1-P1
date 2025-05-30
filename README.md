@@ -86,10 +86,10 @@ Alternatively, the main_sentle.py can also be executed in a multiprocessing job 
 
 TOTAL=100
 PYTHON_SCRIPT="main_eo4bk_phenology.py"
-CROPTYPE="Sugarcane"  # Change this to your desired crop
-#MAX_PROCS=$(nproc)    # Number of available CPU cores
+CROPTYPE="Sugarcane"  
+#MAX_PROCS=$(nproc)    
 MAX_PROCS=10 
-JOBS=()               # Array to track job PIDs
+JOBS=()              
 
 export OMP_NUM_THREADS=1
 export OPENBLAS_NUM_THREADS=1
