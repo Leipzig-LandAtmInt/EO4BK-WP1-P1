@@ -104,7 +104,7 @@ for (( i=0; i<$TOTAL; i++ )); do
 
   JOBS+=($!)  # Store PID of background job
 
-  # Wait if running jobs reach the number of cores
+
   if (( ${#JOBS[@]} >= MAX_PROCS )); then
     wait -n  # Wait for any job to finish before continuing
     # Remove completed job PIDs from the array
@@ -116,7 +116,6 @@ for (( i=0; i<$TOTAL; i++ )); do
   fi
 done
 
-# Wait for all remaining background jobs to finish
 wait
 ```
 ```{0..1}`` defines the index via which the code is run through in a loop.\
