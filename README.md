@@ -22,5 +22,4 @@ The Vegetation Indicies (VI) are computed with spyndex (https://github.com/aweso
 
 The Sentinel 1 and 2 download is done with sentle (https://github.com/cmosig/sentle/tree/main)
 
-The HANTs interpolation used in D2.1_V1.0 is done with https://github.com/gespinoza/hants/tree/master by  Copyright 2017 Gonzalo E. Espinoza-Dávalos, IHE Delft
-Licensed under the Apache License, Version 2.0; http://www.apache.org/licenses/LICENSE-2.0; Modifications have been made to the original code.
+The HANTs interpolation used in D2.1_V1.0 is created by  Copyright 2017 Gonzalo E. Espinoza-Dávalos, IHE Delft and stored here https://github.com/gespinoza/hants/tree/master. It is licensed under the Apache License, Version 2.0; http://www.apache.org/licenses/LICENSE-2.0; Modifications have been made to the original code.
