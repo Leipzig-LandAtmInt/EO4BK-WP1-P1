@@ -60,41 +60,64 @@ REFERENCE_SOURCE = 'CONAB'
 ```REFERENCE_SOURCE``` = Defines the reference source that is used to as the reference polygon. Can be either ```LUCAS```, ```CONAB```, ```LEM```, ```LEMplus```, ```MapBiomasDirect``` or ```TerraClass```.\
 After changes are made ```main_sentle.py``` must be saved. 
 
+
+
 #### Run in parallel
 
-After the input variables are defined. Open ```run_script_parallel.sh```\
+After the input variables are defined. Open ```crops_100.sh```\
+Here a list or a single ```CROPTYPES``` can be set that is used by the ```main_sentle.py``` and by ```job.sh``` as input variable.
 ```
-#!/bin/bash
-#SBATCH --job-name=barley  # Job name
-#SBATCH --output=Logs/trash/master_output_%A_%a.out  # Output file for each job (%A is the master job ID, %a is the array index)
-#SBATCH --error=Logs/master_error_%A_%a.err    # Error file for each job
-#SBATCH --time=1-00:00:00                   # Max time per job
-#SBATCH --partition=clara              # Replace with your appropriate partition
-#SBATCH --array=0-419%40             # 116-350%20
-#SBATCH --mem=16G
-
-
-python main_execute.py $SLURM_ARRAY_TASK_ID
+CROPTYPES=("Rice" "Other_cereals" "Cotton" "Other_root_crops" "Grapes" "Flax" "Other_single_crops" "Olive_groves" "Fruit_and_nut" "Other_permanent_crop" "Sorghum" "Millet")
+```
+Afterwards open ```job.sh``` to define the approximate number of jobs that should equal the number of reference polygons. 
 ```
 ```#SBATCH --array=0-419%40 ``` is set to the index 0 to 419, but can be changed to any integer. %40 refers to a maximum of 40 jobs that are commited in parallel. As soon as one job is finished, another one starts, but never more than 40 jobs simultaneously. The amount of parallel jobs must be changed according to the CPU limitations.\
 ```#SBATCH --mem=16G``` defines the amount of memory used by the jobs.\
 
 Execute main_execute.py in the terminal with:
 ```
-conda activate wp1_d21_V02
-sbatch run_script_parallel.sh
+conda activate eo4bk
+sbatch crops_100.sh
 ```
 #### Run in for loop 
-Alternatively, the main_execute.py can also be executed in a for loop. Open ```run_script_linear.sh``:
+Alternatively, the main_sentle.py can also be executed in a multiprocessing job on a cluster not build on slurm:
 ```
 #!/bin/bash
-COUNTER=0 
-for i in {0..1} # 684   # {99..977}   #977
-do
-  python main_execute.py $i 
-  COUNTER=$(( COUNTER + 1 ))
-  printf "After 'COUNTER=\$(( COUNTER + 1 ))', COUNTER=%d\n" $COUNTER 
+
+TOTAL=100
+PYTHON_SCRIPT="main_eo4bk_phenology.py"
+CROPTYPE="Sugarcane"  # Change this to your desired crop
+#MAX_PROCS=$(nproc)    # Number of available CPU cores
+MAX_PROCS=10 
+JOBS=()               # Array to track job PIDs
+
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+
+
+
+for (( i=0; i<$TOTAL; i++ )); do
+  echo "Starting job $i"
+  python "$PYTHON_SCRIPT" "$CROPTYPE" "$i" &
+
+  JOBS+=($!)  # Store PID of background job
+
+  # Wait if running jobs reach the number of cores
+  if (( ${#JOBS[@]} >= MAX_PROCS )); then
+    wait -n  # Wait for any job to finish before continuing
+    # Remove completed job PIDs from the array
+    for j in "${!JOBS[@]}"; do
+      if ! kill -0 "${JOBS[j]}" 2>/dev/null; then
+        unset 'JOBS[j]'
+      fi
+    done
+  fi
 done
+
+# Wait for all remaining background jobs to finish
+wait
 ```
 ```{0..1}`` defines the index via which the code is run through in a loop.\
 Start the job in the terminal using: 
