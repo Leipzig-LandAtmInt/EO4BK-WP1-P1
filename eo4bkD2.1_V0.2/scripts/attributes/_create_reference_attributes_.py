@@ -119,6 +119,26 @@ def create_ref_attributes(reference_source,  year_attr):
                         }
                 }                
 
+        if reference_source == "WorldCover":
+
+                ref_glb_attributes = {
+                        f'ref_{year_attr}': {
+                        'acknowledgement': 'WorldCover',
+                        'PID': 'https://esa-worldcover.org/en',
+                        'How to cite': 'v1(2020):Zanaga, D., Van De Kerchove, R., De Keersmaecker, W., Souverijns, N., Brockmann, C., Quast, R., Wevers, J., Grosu, A., Paccini, A., Vergnaud, S., Cartus, O., Santoro, M., Fritz, S., Georgieva, I., Lesiv, M., Carter, S., Herold, M., Li, Linlin, Tsendbazar, N.E., Ramoino, F., Arino, O., 2021. ESA WorldCover 10 m 2020 v100; v2(2021):Brockmann, C., Kirches, G., Wevers, J., Cartus, O., Santoro, M., Fritz, S., Lesiv, M., Herold, M., Tsendbazar, N.E., Xu, P., Ramoino, F., Arino, O., 2022. ESA WorldCover 10 m 2021 v200.',
+                        'Download_link': 'v1(2020):https://worldcover2020.esa.int/downloader; v2(2021)https://worldcover2021.esa.int/downloader',
+                        'Detailed_description':'v1(2020): https://worldcover2020.esa.int/documentation; v2(2021):https://worldcover2021.esa.int/documentation'
+                        }
+                }
+
+                ref_perm_attr = {
+                        'point_id': {
+                        'long_name': 'Point Identification',
+                        'description': 'ID of random and homogenous point in WorldCover crop classification',
+                        'value_origin': 'This point is defined by WorldCover',
+                        'original_name': 'point_id'
+                        }
+                }
 
         # if croptype in ('Soybean', 'Coffee', 'Soybean-maize', 'Rice', 'Cotton'):
                 
